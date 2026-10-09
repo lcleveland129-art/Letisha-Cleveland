@@ -79,7 +79,7 @@ CHAPTERS = [
   ('p', "Grandma opened her Bible. “That is exactly why we read Scripture for ourselves.”"),
   # NEW (requested by author): brief, Scripture-based account of what happened in Genesis 9:20-24.
   ('p', "After the flood, Noah planted a vineyard. One day he drank too much wine, became drunk, and lay uncovered inside his tent. Ham saw his father that way and went outside to tell his brothers. But Shem and Japheth took a garment, walked in backward so they would not look, and covered their father."),
-  ('p', "When Noah woke up, he learned what Ham had done. The Bible does not say Noah was angry, and it does not explain every detail. But it shows that Ham dishonored his father, while his brothers protected their father’s dignity. Then Noah spoke the words recorded in Genesis 9:25: “Cursed be Canaan…”"),
+  ('p', "When Noah woke up, he learned what Ham had done. The Bible does not say Noah was angry, and it does not explain every detail. But it shows that Ham dishonored his father, while his brothers protected their father’s dignity. Because of Ham’s actions, Noah spoke a curse—but the words recorded in Genesis 9:25 name Ham’s son: “Cursed be Canaan…”"),
   ('p', "Joesiah looked back at the family tree. “Canaan was Ham’s son.”"),
   ('p', "“Yes,” Grandma answered. “And notice something else. The verse does not say, ‘Cursed be Ham.’”"),
   ('p', "She continued, “It also does not say that Black people were cursed. It does not say Africans were cursed. And it does not say that the descendants of Ham were created to be slaves because of the color of their skin.”"),
@@ -207,13 +207,16 @@ CHAPTERS = [
  ]),
 ]
 
-# Scripture spotlight that faces Chapter 12 (Chapter 12 has no illustration).
+# Scripture spotlight that faces Chapter 10. Chapter 10 has no illustration of its own;
+# its former picture ("Joseph Rises in Egypt", whose art is labelled CHAPTER 12 and includes
+# the family-reunion panel) now illustrates Chapter 12.
+SPOTLIGHT_CHAPTER = 10
 SPOTLIGHT = {
     'label': "SCRIPTURE SPOTLIGHT",
-    'intro': "Joseph’s words to his brothers",
-    'text': "“You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives.”",
-    'ref': "Genesis 50:20",
+    'intro': "Even in prison, Joseph was not alone",
+    'text': "“But while Joseph was there in the prison, the L<font size=\"17\">ORD</font> was with him; he showed him kindness and granted him favor in the eyes of the prison warden.”",
+    'ref': "Genesis 39:20–21",
 }
 
 # Illustration file for each chapter (index into ill-NN.jpg), and for the Book 2 preview.
-CHAPTER_ART = {1: 0, 2: 1, 3: 3, 4: 2, 5: 4, 6: 5, 7: 6, 8: 7, 9: 8, 10: 9, 11: 10, 13: 11, 14: 12}
+CHAPTER_ART = {1: 0, 2: 1, 3: 3, 4: 2, 5: 4, 6: 5, 7: 6, 8: 7, 9: 8, 11: 10, 12: 9, 13: 11, 14: 12}

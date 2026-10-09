@@ -272,18 +272,11 @@ def pick_size():
 
 
 # ---------------------------------------------------------------- page plan
-PAGE_OF_CH = {n: 2 * n + 2 for n in range(1, 12)}
-PAGE_OF_CH.update({12: 26, 13: 28, 14: 30})
+PAGE_OF_CH = {n: 2 * n + 2 for n in range(1, 15)}
 PLAN = {1: ('title',), 2: ('copyright',), 3: ('contents',)}
-for n in range(1, 12):
+for n in range(1, 15):
     PLAN[2 * n + 2] = ('chapter', n)
-    PLAN[2 * n + 3] = ('art', C.CHAPTER_ART[n])
-PLAN[26] = ('chapter', 12)
-PLAN[27] = ('spotlight',)
-PLAN[28] = ('chapter', 13)
-PLAN[29] = ('art', C.CHAPTER_ART[13])
-PLAN[30] = ('chapter', 14)
-PLAN[31] = ('art', C.CHAPTER_ART[14])
+    PLAN[2 * n + 3] = ('art', C.CHAPTER_ART[n]) if n in C.CHAPTER_ART else ('spotlight',)
 NPAGES = max(PLAN)
 
 

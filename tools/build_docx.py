@@ -1,5 +1,6 @@
 """Editable Word manuscript mirroring the print interior page-for-page (same trim + bleed size,
 same page order, illustrations on their own pages)."""
+import re
 import sys
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
@@ -139,11 +140,11 @@ def chapter(n, title, blocks):
 chap = {n: (t, b) for n, t, b in C.CHAPTERS}
 for n in range(1, 15):
     chapter(n, *chap[n]); page_break()
-    if n == 12:
+    if n == C.SPOTLIGHT_CHAPTER:
         para('', after=150)
         para(C.SPOTLIGHT['label'], 13, True, color=GOLD, font=HEAD, align=C_)
         para(C.SPOTLIGHT['intro'], 12, italic=True, align=C_, after=14)
-        para(C.SPOTLIGHT['text'], 20, italic=True, color=NAVY, align=C_, after=14)
+        para(re.sub(r'<[^>]+>', '', C.SPOTLIGHT['text']), 20, italic=True, color=NAVY, align=C_, after=14)
         para('—' + C.SPOTLIGHT['ref'].upper(), 13, True, color=GOLD, font=HEAD, align=C_)
         page_break()
         continue

@@ -18,7 +18,7 @@ The pictures also had old page numbers printed in them (1, 4, 14, 15, 16, 15, 17
 
 ## 2. How it was fixed
 
-- **Each chapter is now a facing pair of pages:** chapter text on the left-hand page, its own picture on the right-hand page. You see both together when the book is open.
+- **Each chapter is now a facing pair of pages:** chapter text on the left-hand page, its own picture on the right-hand page. You see both together when the book is open. The exception is Chapter 10, which faces a Scripture Spotlight page because its picture now illustrates Chapter 12.
 - **Each picture was matched to its chapter by its subject**, not by the number printed on it.
 - **The out-of-date chapter numbers inside the pictures were relettered** (for example 7 → 4, 8 → 6, 15 → 11, 17 → 13). Only the lettering was touched. The new lettering matches the size, position and colour of the original.
 - **The old page numbers inside the pictures were replaced** with the true page numbers.
@@ -80,14 +80,14 @@ Checks that passed:
 | 6 / 7 | L / R | **Ch. 2 text / "The Ark Begins"** | **Fixes the reported p. 6–7 error**; art page number 4 → 7 |
 | 8 / 9 | L / R | Ch. 3 text / "Noah's Sons and Their Families" | Moved from old p. 9; page number 15 → 9 |
 | 10 / 11 | L / R | Ch. 4 text / "Ham's Descendants…" | **CHAPTER 7 → CHAPTER 4**; page number 14 → 11 |
-| 12 / 13 | L / R | Ch. 5 text / "Ham's Sons and the Story of Canaan" | "be be" → "he be"; page number 16 → 13 |
+| 12 / 13 | L / R | Ch. 5 text / "Ham's Sons and the Story of Canaan" | "be be" → "he be"; "What Happened with Canaan?" box reworded (see §5); page number 16 → 13 |
 | 14 / 15 | L / R | Ch. 6 text / "A Thriving Africa" | CHAPTER 8 → 6 |
 | 16 / 17 | L / R | Ch. 7 text / "Egypt (Kemet)…" | CHAPTER 9 → 7 |
 | 18 / 19 | L / R | Ch. 8 text / "A Thriving Civilization" | CHAPTER 10 → 8; page number 18 → 19 |
 | 20 / 21 | L / R | Ch. 9 text / "Joseph Comes to Egypt" | CHAPTER 11 → 9; page number 19 → 21 |
-| 22 / 23 | L / R | Ch. 10 text / "Joseph Rises in Egypt" | CHAPTER 12 → 10; page number 20 → 23 |
+| 22 / 23 | L / R | Ch. 10 text / Scripture Spotlight (Genesis 39:20–21) | Ch. 10's former picture moved to Ch. 12, as you asked; Ch. 10 has no artwork of its own |
 | 24 / 25 | L / R | Ch. 11 text / "Joseph Rises to Power" | CHAPTER 15 → 11; page number 23 → 25 |
-| 26 / 27 | L / R | Ch. 12 text / Scripture Spotlight (Genesis 50:20) | Ch. 12 has no art (see Open Issues #3) |
+| 26 / 27 | L / R | Ch. 12 text / "Joseph Rises in Egypt" | Its original label "CHAPTER 12" is now correct; page number 20 → 27; its "A Greater Purpose" panel shows the family reunion |
 | 28 / 29 | L / R | Ch. 13 text / "What We Learned" | CHAPTER 17 → 13; "Key Lessons from Part 1" → "Book 1"; page number 25 → 29 |
 | 30 / 31 | L / R | Ch. 14 text / Book 2 preview | "PART 2" → "BOOK 2"; page number 26 → 31; Book 2 preview now only at the end |
 
@@ -106,7 +106,8 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
   - This gives 302 DPI at the printed size of 7.55 × 10.1 in.
   - See the resolution warning in Open Issues #7: enlarging cannot add detail that wasn't in the originals.
 - **Relettered:**
-  - 10 chapter/series labels, 13 page numbers and 1 Scripture misprint.
+  - 9 chapter/series labels, 13 page numbers and 1 Scripture misprint.
+  - The first paragraph of the Chapter 5 "What Happened with Canaan?" box. It wrongly said "Noah saw something wrong and responded in anger". It now reads: "In Genesis 9, Ham saw his father uncovered and told his brothers. Because of Ham's actions, Noah cursed Ham's son, Canaan:"
   - The old lettering was removed with inpainting (filling in from the surrounding background), and new lettering set in a matching small-caps serif.
   - Size, position and colour were sampled from the original label.
 - **Placement:**
@@ -130,6 +131,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 | 2 | "seven pairs of every clean animal, one pair of animals that were not clean" → "seven pairs of every kind of clean animal, one pair of every kind of animal that was not clean" | Accuracy (Genesis 7:2–3) |
 | 3, 4, 6, 14 | "Shem. Ham. Japheth." / "Cush. Mizraim. Put. Canaan." / "Ham." / "Canaan." / "Africa." / "His name was Moses." set as emphasized lines | Keeps your dramatic one-word style; reads as intended |
 | 5 | **NEW (you requested it):** two short paragraphs explaining Genesis 9:20–24, the events behind "Cursed be Canaan". The second says Scripture does not use the word "angry". | Replaces "After the Flood, Genesis records a troubling event involving Noah and Ham. When Noah later spoke about what had happened…" |
+| 5 | **Links the curse to Ham's actions (you requested it):** "Because of Ham's actions, Noah spoke a curse—but the words recorded in Genesis 9:25 name Ham's son: 'Cursed be Canaan…'" | Makes clear why Canaan was named |
 | 5 | Added "READ IT FOR YOURSELF: Genesis 9:18–27" | Supports the chapter's message: read before you repeat |
 | 5 | "your people-read it" → "your people—read it" | Punctuation |
 | 7 | "“Why?”" → "“Why?” Joesiah asked." | The speaker was unclear |
@@ -143,7 +145,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 **Scripture checked against the text:**
 - Genesis 5:28–32; 6:5–22; 7:2–3, 12; 8:20; 9:9–13, 18–27; 10:1–20.
 - Genesis 37; 39–41; 42–46; 50:20.
-- Exodus 1:8. The quotations of Genesis 6:9 and Exodus 1:8 match the NIV word for word.
+- Exodus 1:8. The quotations of Genesis 6:9, Genesis 39:20–21 and Exodus 1:8 match the NIV word for word.
 
 **History checked:**
 - Kemet as an Egyptian name for Egypt; Mizraim as the Hebrew name.
@@ -161,7 +163,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 | Trim box / bleed box | ✅ Set on every page (right pages trim x = 0–8.5 in; left pages x = 0.125–8.625 in) |
 | Orientation | ✅ All portrait, no rotation |
 | Fonts | ✅ 6 of 6 fonts embedded and subset (Cinzel, Literata; SIL Open Font License, so commercial use is allowed). No non-embedded fonts. |
-| Safe area | ✅ All 3,001 words checked by position. The closest is 0.54 in from the trim (KDP minimum 0.375 in). All pictures are ≥ 0.45 in inside the trim. |
+| Safe area | ✅ All 3,017 words checked by position. The closest is 0.54 in from the trim (KDP minimum 0.375 in). All pictures are ≥ 0.45 in inside the trim. |
 | Gutter | ✅ Text inside margin 0.875 in (KDP minimum 0.375 in for 24–150 pages) |
 | Image resolution | ⚠️ 302 DPI effective, but enlarged from about 121 DPI originals (see Open Issues #7) |
 | Crop / printer marks | ✅ None |
@@ -181,4 +183,4 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 - **KDP's Print Previewer itself.** It runs inside your KDP account. Please upload the PDF and step through the previewer before you approve the proof.
 - **Printed colour.** Screen colours can't predict exact print output. Order a printed proof copy before publishing.
 - **KDP's help website** couldn't be reached from my environment. The specifications above were checked against KDP help-page excerpts returned by web search: [KDP spine and cover help](https://kdp.amazon.com/help/topic/G201834180), [KDP trim size](https://kdp.amazon.com/help/topic/G201834560) and [KDP bleed and margin guidance summary](https://www.vappingo.com/word-blog/kdp-bleed-safe-zones/).
-- **Your exact author name, and the Open Issues items below.** These need your decision.
+- **The Open Issues items.** These need your decision.

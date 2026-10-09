@@ -28,13 +28,20 @@ EDITS = {
     1:  [('folio', (488, 1211, 500, 1229), '7', 'dark')],
     2:  [('line', (280, 19, 560, 49), 'CHAPTER 4', 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (440, 1202, 458, 1219), '11', 'dark')],
     3:  [('folio', (484, 1197, 505, 1216), '9', 'light')],
-    4:  [('plain', (598, 463, 890, 481), 'shall he be unto his brothers.”', 'shall be be unto his brothers.”'),
+    4:  [('block', (548, 306, 925, 413),
+          ['In Genesis 9, Ham saw his father',
+           'uncovered and told his brothers.',
+           'Because of Ham\u2019s actions, Noah',
+           'cursed Ham\u2019s son, Canaan:'],
+          dict(ref_text='In Genesis 9, Noah saw something', ref_w=333, left=552,
+               baselines=[325.5, 352, 378.5, 405])),
+         ('plain', (598, 463, 890, 481), 'shall he be unto his brothers.”', 'shall be be unto his brothers.”'),
          ('folio', (487, 1203, 511, 1223), '13', 'light')],
     5:  [('line', (200, 35, 420, 63), 'CHAPTER 6', 'CHAPTER 8', 'CHAPTER 10', 'CHAPTER 12'), ('folio', (432, 1204, 450, 1221), '15', 'dark')],
     6:  [('line', (230, 33, 440, 63), 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (479, 1209, 497, 1226), '17', 'dark')],
     7:  [('line', (360, 26, 600, 56), 'CHAPTER 8', 'CHAPTER 10', 'CHAPTER 12'), ('folio', (468, 1209, 487, 1226), '19', 'dark')],
     8:  [('line', (245, 31, 470, 60), 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (496, 1202, 514, 1219), '21', 'dark')],
-    9:  [('line', (285, 32, 505, 62), 'CHAPTER 10', 'CHAPTER 12'), ('folio', (460, 1203, 481, 1219), '23', 'dark')],
+    9:  [('folio', (460, 1203, 481, 1219), '27', 'dark')],   # original label CHAPTER 12 is now correct
     10: [('line', (245, 38, 480, 69), 'CHAPTER 11', 'CHAPTER 15'), ('folio', (489, 1196, 509, 1212), '25', 'dark')],
     11: [('line', (425, 34, 665, 65), 'CHAPTER 13', 'CHAPTER 17'), ('line', (260, 957, 770, 991), 'KEY LESSONS from BOOK 1', 'KEY LESSONS from PART 1'),
          ('folio', (474, 1197, 495, 1214), '29', 'dark')],
@@ -135,6 +142,19 @@ def draw_plain(img, text, cx, baseline, orig_w, old_text, color, fonts):
     ImageDraw.Draw(img).text((cx, baseline), text, font=f, fill=color, anchor='ms')
 
 
+def draw_block(img, lines, ref, color, fonts):
+    """Re-set a short left-aligned paragraph on the original baselines, sized so the
+    original first line would have exactly its measured width."""
+    path = fonts + '/Literata-Regular.ttf'
+    f = ImageFont.truetype(path, 100)
+    size = max(8, int(round(100 * ref['ref_w'] * SCALE / f.getlength(ref['ref_text']))))
+    f = ImageFont.truetype(path, size)
+    d = ImageDraw.Draw(img)
+    x = (ref['left'] - CROP['l']) * SCALE
+    for line, b in zip(lines, ref['baselines']):
+        d.text((x, (b - CROP['t']) * SCALE), line, font=f, fill=color, anchor='ls')
+
+
 def draw_folio(img, text, cx, baseline, cap_h, color, fonts):
     f0 = ImageFont.truetype(fonts + '/Literata-Regular.ttf', 100)
     ch = f0.getbbox('8')[3] - f0.getbbox('8')[1]
@@ -154,7 +174,7 @@ def process(i):
     log = []
     for spec in EDITS.get(i, []):
         kind, box, new = spec[:3]
-        old_text = spec[3] if kind in ('line', 'plain') else None
+        old_text = spec[3] if kind in ('line', 'plain', 'block') else None
         pad = 3
         bx = [int((box[0] - CROP['l'] - pad) * SCALE), int((box[1] - CROP['t'] - pad) * SCALE),
               int((box[2] - CROP['l'] + pad) * SCALE), int((box[3] - CROP['t'] + pad) * SCALE)]
@@ -162,7 +182,7 @@ def process(i):
         x0, y0, x1, y1 = bx
         roi = rgb[y0:y1, x0:x1].astype(np.int32)
         lum = roi.mean(axis=2)
-        if kind in ('line', 'plain'):
+        if kind in ('line', 'plain', 'block'):
             ink = lum < 150
             core = lum < 110
         else:
@@ -173,7 +193,7 @@ def process(i):
         if not core.any():
             log.append((kind, new, 'NO GLYPHS'))
             continue
-        if kind == 'plain':
+        if kind in ('plain', 'block'):
             color = tuple(int(v) for v in np.median(roi[core], axis=0))
         elif kind == 'line':
             # solid stroke colour of the original lettering (darkest ink pixels)
@@ -189,9 +209,25 @@ def process(i):
         # never let the erase mask leave the padded band (protects the title line below)
         clip = np.zeros_like(m); clip[y0:y1, x0:x1] = 255
         m = cv2.bitwise_and(m, clip)
-        bgr = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
-        bgr = cv2.inpaint(bgr, m, 7, cv2.INPAINT_TELEA)
-        rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
+        if kind == 'block':
+            # large text block: cover the letters AND their light sharpening halo, then fill
+            # from the surrounding clean parchment only (normalized convolution) plus grain
+            region = rgb[y0:y1, x0:x1].astype(np.float32)
+            core_m = (lum < 150).astype(np.uint8)
+            big = cv2.dilate(core_m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (23, 23))) > 0
+            wgt = (~big).astype(np.float32)
+            num = cv2.GaussianBlur(region * wgt[..., None], (0, 0), 14)
+            den = cv2.GaussianBlur(wgt, (0, 0), 14)[..., None]
+            fill = num / np.maximum(den, 1e-3)
+            rng2 = np.random.default_rng(42)
+            fill += rng2.normal(0, 3.0, fill.shape)
+            region[big] = fill[big]
+            rgb = rgb.copy(); rgb[y0:y1, x0:x1] = np.clip(region, 0, 255).astype(np.uint8)
+            m = np.zeros(rgb.shape[:2], np.uint8)   # nothing further to inpaint
+        else:
+            bgr = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
+            bgr = cv2.inpaint(bgr, m, 7, cv2.INPAINT_TELEA)
+            rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
         rng = np.random.default_rng(i)
         noise = rng.normal(0, 2.5, rgb.shape)
         mm = (m > 0)[..., None]
@@ -202,6 +238,8 @@ def process(i):
         hgt = gy1 - gy0 + 1
         if kind == 'line':
             draw_smallcaps(img, new, cx, gy1 + 1, gx1 - gx0 + 1, old_text, color, FONTS)
+        elif kind == 'block':
+            draw_block(img, new, old_text, color, FONTS)
         elif kind == 'plain':
             draw_plain(img, new, cx, gy1 + 1, gx1 - gx0 + 1, old_text, color, FONTS)
         else:

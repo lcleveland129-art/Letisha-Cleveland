@@ -6,34 +6,33 @@
 
 ## A. Decisions needed before you upload
 
-### 1. Author name: must match everywhere (applied – please confirm)
-- The interior now says **LeTisha C. Cleveland**, as you asked ("add LeTisha C. Cleveland to the manuscript").
-- Your cover draft and your specification list say **LeTisha Cleveland**.
-- KDP checks that the author name on the cover, the title page and the KDP listing all match. A mismatch can get the book rejected.
-- **Choose one:**
-  - (a) Keep "LeTisha C. Cleveland": update the cover and enter exactly that name in KDP.
-  - (b) Use "LeTisha Cleveland": I change the title page and copyright page (a one-minute change).
+### 1. Author name: ✅ RESOLVED, "LeTisha C. Cleveland"
+- You confirmed the "C." The title page, copyright page and PDF information all say **LeTisha C. Cleveland**.
+- **Still to do on your side:**
+  - Enter exactly **LeTisha C. Cleveland** as the author in KDP.
+  - Add the "C." to the cover. The cover draft says "By LeTisha Cleveland".
+  - KDP checks that these match.
 
-### 2. New Chapter 5 paragraph: Why did Noah speak against Ham's family? (applied – please confirm)
-You asked for a brief explanation of why Noah was angry with Ham. This is what is now in Chapter 5:
+### 2. Chapter 5: link Noah's curse on Canaan to Ham's actions (applied – please confirm)
+You asked to connect the curse on Canaan to what Ham did. This is now in Chapter 5's text:
 
 > After the flood, Noah planted a vineyard. One day he drank too much wine, became drunk, and lay uncovered inside his tent. Ham saw his father that way and went outside to tell his brothers. But Shem and Japheth took a garment, walked in backward so they would not look, and covered their father.
 >
-> When Noah woke up, he learned what Ham had done. The Bible does not say Noah was angry, and it does not explain every detail. But it shows that Ham dishonored his father, while his brothers protected their father's dignity. Then Noah spoke the words recorded in Genesis 9:25: "Cursed be Canaan…"
+> When Noah woke up, he learned what Ham had done. The Bible does not say Noah was angry, and it does not explain every detail. But it shows that Ham dishonored his father, while his brothers protected their father's dignity. **Because of Ham's actions, Noah spoke a curse—but the words recorded in Genesis 9:25 name Ham's son: "Cursed be Canaan…"**
 
-- This follows Genesis 9:20–24 closely.
-- It does **not** say Noah was "angry", because Scripture doesn't use that word.
-- It does not speculate beyond the text.
-- A "READ IT FOR YOURSELF: Genesis 9:18–27" line was added to the chapter.
-- Approve as written, or tell me what you'd like changed (for example, leaving out the wine).
+The Chapter 5 **picture** ("What Happened with Canaan?" box) was also relettered so it agrees with the text:
+- **Before:** "In Genesis 9, Noah saw something wrong and responded in anger. He did not curse Ham. The Bible specifically names Canaan, Ham's son:"
+- **After:** "In Genesis 9, Ham saw his father uncovered and told his brothers. Because of Ham's actions, Noah cursed Ham's son, Canaan:"
 
-### 3. Chapter 12 has no illustration: page 27 is a "Scripture Spotlight" (applied – please confirm)
-- To keep every chapter's text facing its own picture, the page opposite Chapter 12 needed content.
-- I used a full-page Scripture Spotlight: Genesis 50:20 (NIV), "You intended to harm me, but God intended it for good…". Chapter 12 already paraphrases this verse.
-- **Options:**
-  - (a) Keep it.
-  - (b) Commission a Chapter 12 illustration (Joseph revealing himself to his brothers) and I'll drop it in.
-  - (c) Replace it with a "Words to Know" glossary: Mizraim, Cush, Kemet, Nubia, covenant, genealogy, famine, Pharaoh.
+Both versions follow Genesis 9:20–25 and do not claim Noah was angry.
+
+### 3. Chapter 12 picture: ✅ DONE (you chose to move the existing art)
+- **Chapter 12 ("A Family Reunited in Egypt")** now faces the **"Joseph Rises in Egypt"** picture.
+  - Its "A Greater Purpose" panel shows Joseph embracing his family.
+  - Its "Planning for the Future" panel shows Joseph's family coming to buy grain.
+  - The artwork was originally labelled "CHAPTER 12", so that label is now correct.
+- **Chapter 10 ("From Servant to Prisoner")** now faces a Scripture Spotlight page: Genesis 39:20–21 (NIV), "But while Joseph was there in the prison, the LORD was with him…".
+- If your illustrator later makes a Chapter 10 picture (for example, Joseph serving faithfully in prison), I'll drop it in place of the Scripture page.
 
 ### 4. "Part" → "Book" wording (applied – please confirm)
 - You told me the series is *Joesiah & Malani* and this is Book 1. So "Part 1" became "Book 1", and in the artwork "PART 2" became "BOOK 2" and "Key Lessons from Part 1" became "Key Lessons from Book 1".
@@ -53,8 +52,8 @@ The pictures carry headings from an earlier draft. Each chapter now shows its te
 | 7 | Egypt (Kemet) and Nubia (Kush) | Egypt (Kemet): A Land of Wisdom and Innovation |
 | 8 | Before Joseph Arrived | A Thriving Civilization |
 | 9 | Joseph Comes to Egypt | Joseph Comes to Egypt ✅ |
-| 10 | From Servant to Prisoner | Joseph Rises in Egypt |
 | 11 | Joseph Rises to Leadership | Joseph Rises to Power: Wisdom, Planning, and Provision |
+| 12 | A Family Reunited in Egypt | Joseph Rises in Egypt |
 | 13 | What We Learned | What We Learned ✅ |
 
 This reads acceptably as "chapter title + illustration title". If you want them identical, there are two options:
@@ -63,12 +62,9 @@ This reads acceptably as "chapter title + illustration title". If you want them 
 
 ## B. Accuracy problems printed inside the artwork (need approval to reletter, or replacement art)
 
-I fixed only the clear misprint ("shall **be** be" → "shall **he** be", Genesis 9:25). The following are wording or accuracy issues, so I've left them for you to decide:
+Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), and the Chapter 5 "What Happened with Canaan?" box (item 2 above). The rest are wording or accuracy issues, left for you to decide:
 
-6a. **Chapter 5 art ("What Happened with Canaan?")** says: "*In Genesis 9, Noah saw something wrong and responded in anger.*"
-   - In Genesis 9:22, it was **Ham** who saw, and the Bible does not mention anger. This also conflicts with the new Chapter 5 text.
-   - **Suggested replacement:** "In Genesis 9, Ham saw his father uncovered and told his brothers. Noah did not curse Ham."
-   - I can reletter it if you approve.
+6a. ✅ **Chapter 5 art.** Fixed (see item 2).
 
 6b. **Chapter 9 art** shows "*God allowed everything that happened to Joseph to position him for a greater purpose.*" in quotation marks, labelled **Genesis 37:28, 36**.
    - That sentence is a summary, not a Bible verse, so it shouldn't carry quotation marks and a verse reference.
@@ -76,7 +72,7 @@ I fixed only the clear misprint ("shall **be** be" → "shall **he** be", Genesi
      - Relabel it as a summary (remove the quotation marks and reference).
      - Or replace it with Genesis 50:20 or Genesis 39:2.
 
-6c. **Chapter 10 art ("A Faithful Servant")** says "*Joseph worked in Pharaoh's house.*"
+6c. **Chapter 12 art ("Joseph Rises in Egypt", "A Faithful Servant" panel)** says "*Joseph worked in Pharaoh's house.*"
    - Genesis 39 says **Potiphar's** house. Potiphar was one of Pharaoh's officials.
    - **Suggested:** "Joseph worked in the house of Potiphar, one of Pharaoh's officials."
 
@@ -97,8 +93,8 @@ I fixed only the clear misprint ("shall **be** be" → "shall **he** be", Genesi
 ### 7. Image resolution: originals are needed for the sharpest print
 - The pictures in your PDF are only **980 × 1268 pixels**. At the printed size (7.55 × 10.1 in), that's about **121 DPI**. KDP recommends **300 DPI**.
 - I enlarged them to 302 DPI with high-quality standard resampling. I deliberately did **not** use AI "upscalers", because those redraw faces.
-- This prevents jagged pixels and passes KDP's resolution check, but it can't add detail. **Small lettering inside the busy panel pictures will print soft**, especially Chapters 8, 10 and 11.
-- **Best fix:** send me the original illustration files at **at least 2,300 × 3,050 pixels**, without the photographed-book frame. I'll drop them into the same layout.
+- This prevents jagged pixels and passes KDP's resolution check, but it can't add detail. **Small lettering inside the busy panel pictures will print soft**, especially Chapters 8, 11 and 12.
+- **Best fix (you're looking for them):** send me the original illustration files at **at least 2,300 × 3,050 pixels**, without the photographed-book frame. I'll drop them into the same layout.
 
 ### 8. Character consistency (noted, no changes made)
 Faces, hair textures and skin tones are consistent. Outfits and hair styling vary between pictures:

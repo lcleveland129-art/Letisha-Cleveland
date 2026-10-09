@@ -120,6 +120,13 @@ def chapter(n, title, blocks):
             if b[1]:
                 para(b[1], 8.5, True, color=GOLD, font=HEAD, after=0)
             p = para(b[2], bold=True, italic=True, color=NAVY); shade(p, 'F7EED8')
+        elif k == 'map':
+            para(b[1], 8.5, True, color=GOLD, font=HEAD, after=0)
+            for name, today in b[2]:
+                p = para(after=1); shade(p, 'F7EED8')
+                r = p.add_run(name + ': '); r.bold = True; r.font.color.rgb = NAVY
+                r = p.add_run(today); r.font.color.rgb = NAVY
+            para(after=2)
         elif k == 'pledge':
             para(b[1], 13, True, color=MAROON, font=HEAD, align=C_)
         elif k == 'turn':

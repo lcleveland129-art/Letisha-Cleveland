@@ -62,21 +62,17 @@ This reads acceptably as "chapter title + illustration title". If you want them 
 
 ## B. Accuracy problems printed inside the artwork (need approval to reletter, or replacement art)
 
-Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), the Chapter 5 "What Happened with Canaan?" box (item 2 above), and "Pharaoh's house" → "Potiphar's house" (6c). The rest are wording or accuracy issues, left for you to decide:
+All the accuracy items you asked about are now fixed in the artwork: the "shall be be" misprint, the Chapter 5 box (item 2), 6b, 6c and 6d. The Canaan panel also now names today's countries (6g). Only 6e and 6f remain, and both are optional. The rest are wording or accuracy issues, left for you to decide:
 
 6a. ✅ **Chapter 5 art.** Fixed (see item 2).
 
-6b. **Chapter 9 art** shows "*God allowed everything that happened to Joseph to position him for a greater purpose.*" in quotation marks, labelled **Genesis 37:28, 36**.
-   - That sentence is a summary, not a Bible verse, so it shouldn't carry quotation marks and a verse reference.
-   - **Suggestions:**
-     - Relabel it as a summary (remove the quotation marks and reference).
-     - Or replace it with Genesis 50:20 or Genesis 39:2.
+6b. ✅ **Chapter 9 art.** Fixed as you asked. The summary sentence wrongly shown as a Bible quotation ("God allowed everything that happened to Joseph…", "Genesis 37:28, 36") was replaced with Joseph's actual words: **"You intended to harm me, but God intended it for good." Genesis 50:20**.
 
 6c. ✅ **Chapter 12 art ("A Faithful Servant" panel).** Fixed as you asked. "Joseph worked in Pharaoh's house" → "Joseph worked in **Potiphar's** house" (Genesis 39:1–4). The panel's three lines were relettered together so the type matches.
 
-6d. **Chapter 6 art** says "*After the flood, Ham's descendants built great nations in Africa.*"
-   - It states as fact a link that the text (Chapter 4) carefully presents as association and interpretation.
-   - **Suggested:** "Many of the peoples linked with Ham's family lived in Africa and built great nations."
+6d. ✅ **Chapter 6 art.** Fixed as you asked. The paragraph now begins: **"After the flood, the families of Ham's sons Cush, Mizraim, and Put built great nations in Africa."** The rest of the paragraph is unchanged and rewrapped.
+
+6g. ✅ **Chapter 4 art (Canaan panel): today's map added, as you asked.** "(Levant region)" became **"(today: Israel, Palestine, Lebanon, and parts of Syria and Jordan)"**. Relettering the panel also removed some garbled strike-through marks in the original artwork.
 
 6e. **Chapter 1 art** says Noah "*taught his family to do the same.*"
    - Scripture doesn't say this directly. It's a minor point and probably fine as storytelling. Tell me if you want it changed.
@@ -123,7 +119,7 @@ If you send approved high-resolution cover artwork and ask, I'll format the full
 
 ## E. Optional editorial suggestions (not applied)
 
-14. **Chapter 4:** add one sentence on **Put**, for example "Put is often associated with lands west of Egypt, such as ancient Libya." The text explains Cush and Mizraim but not Put.
+14. ✅ **Chapter 4 (done):** The text now explains Put and makes the Africa link clear: "Put is often associated with lands west of Egypt, such as ancient Libya. So three of Ham's sons—Cush, Mizraim, and Put—are linked with lands in Africa. Canaan's family settled in the land of Canaan, northeast of Egypt." It also has an **"On Today's Map"** box: Cush (Kush, Nubia) = Sudan and southern Egypt; Mizraim = Egypt; Put = Libya; Canaan = Israel, the Palestinian territories (the West Bank and Gaza), Lebanon, and parts of Syria and Jordan.
 15. **Chapter 5:** "divinely destined for servitude" is hard vocabulary for ages 8–12. A suggested alternative: "used to claim that God meant African people to be enslaved, and to defend racial slavery."
 16. **Chapter 9** repeats Chapter 8's sentence about Egypt already having rulers, cities and agriculture. You could shorten it to one line.
 17. **"Read it for yourself" lines** are missing from Chapters 4, 7, 8, 12, 13 and 14. Suggested additions:

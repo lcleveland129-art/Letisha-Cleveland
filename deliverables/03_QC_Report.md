@@ -79,12 +79,12 @@ Checks that passed:
 | 4 / 5 | L / R | Ch. 1 text / "The World God Saw" | Art page number 1 → 5 |
 | 6 / 7 | L / R | **Ch. 2 text / "The Ark Begins"** | **Fixes the reported p. 6–7 error**; art page number 4 → 7 |
 | 8 / 9 | L / R | Ch. 3 text / "Noah's Sons and Their Families" | Moved from old p. 9; page number 15 → 9 |
-| 10 / 11 | L / R | Ch. 4 text / "Ham's Descendants…" | **CHAPTER 7 → CHAPTER 4**; page number 14 → 11 |
+| 10 / 11 | L / R | Ch. 4 text / "Ham's Descendants…" | **CHAPTER 7 → CHAPTER 4**; page number 14 → 11; Canaan panel now names today's countries |
 | 12 / 13 | L / R | Ch. 5 text / "Ham's Sons and the Story of Canaan" | "be be" → "he be"; "What Happened with Canaan?" box reworded (see §5); page number 16 → 13 |
-| 14 / 15 | L / R | Ch. 6 text / "A Thriving Africa" | CHAPTER 8 → 6 |
+| 14 / 15 | L / R | Ch. 6 text / "A Thriving Africa" | CHAPTER 8 → 6; first sentence names Cush, Mizraim, and Put |
 | 16 / 17 | L / R | Ch. 7 text / "Egypt (Kemet)…" | CHAPTER 9 → 7 |
 | 18 / 19 | L / R | Ch. 8 text / "A Thriving Civilization" | CHAPTER 10 → 8; page number 18 → 19 |
-| 20 / 21 | L / R | Ch. 9 text / "Joseph Comes to Egypt" | CHAPTER 11 → 9; page number 19 → 21 |
+| 20 / 21 | L / R | Ch. 9 text / "Joseph Comes to Egypt" | CHAPTER 11 → 9; page number 19 → 21; quotation box → Genesis 50:20 |
 | 22 / 23 | L / R | Ch. 10 text / Scripture Spotlight (Genesis 39:20–21) | Ch. 10's former picture moved to Ch. 12, as you asked; Ch. 10 has no artwork of its own |
 | 24 / 25 | L / R | Ch. 11 text / "Joseph Rises to Power" | CHAPTER 15 → 11; page number 23 → 25 |
 | 26 / 27 | L / R | Ch. 12 text / "Joseph Rises in Egypt" | Its original label "CHAPTER 12" is now correct; page number 20 → 27; its "A Greater Purpose" panel shows the family reunion; "Pharaoh's house" → "Potiphar's house" |
@@ -107,6 +107,9 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
   - See the resolution warning in Open Issues #7: enlarging cannot add detail that wasn't in the originals.
 - **Relettered:**
   - 9 chapter/series labels, 13 page numbers and 1 Scripture misprint.
+  - Chapter 4 Canaan panel: "(Levant region)" → "(today: Israel, Palestine, Lebanon, and parts of Syria and Jordan)". This also cleaned up garbled strike-through marks.
+  - Chapter 6 paragraph: "After the flood, Ham's descendants built great nations in Africa" → "After the flood, the families of Ham's sons Cush, Mizraim, and Put built great nations in Africa".
+  - Chapter 9 quotation box: a summary sentence wrongly cited as "Genesis 37:28, 36" → Joseph's actual words, "You intended to harm me, but God intended it for good." (Genesis 50:20).
   - The Chapter 12 "A Faithful Servant" panel: "Pharaoh's house" → "Potiphar's house" (Genesis 39:1–4). All three lines were relettered together.
   - The first paragraph of the Chapter 5 "What Happened with Canaan?" box. It wrongly said "Noah saw something wrong and responded in anger". It now reads: "In Genesis 9, Ham saw his father uncovered and told his brothers. Because of Ham's actions, Noah cursed Ham's son, Canaan:"
   - The old lettering was removed with inpainting (filling in from the surrounding background), and new lettering set in a matching small-caps serif.
@@ -132,6 +135,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 | 2 | "seven pairs of every clean animal, one pair of animals that were not clean" → "seven pairs of every kind of clean animal, one pair of every kind of animal that was not clean" | Accuracy (Genesis 7:2–3) |
 | 3, 4, 6, 14 | "Shem. Ham. Japheth." / "Cush. Mizraim. Put. Canaan." / "Ham." / "Canaan." / "Africa." / "His name was Moses." set as emphasized lines | Keeps your dramatic one-word style; reads as intended |
 | 5 | **NEW (you requested it):** two short paragraphs explaining Genesis 9:20–24, the events behind "Cursed be Canaan". The second says Scripture does not use the word "angry". | Replaces "After the Flood, Genesis records a troubling event involving Noah and Ham. When Noah later spoke about what had happened…" |
+| 4 | **NEW (you requested it):** explains Put; states that Cush, Mizraim, and Put are linked with Africa while Canaan's family settled in Canaan; adds an "On Today's Map" box (Sudan and southern Egypt, Egypt, Libya; Israel, the Palestinian territories, Lebanon, and parts of Syria and Jordan) | Readers can find the places on a modern map |
 | 5 | **Links the curse to Ham's actions (you requested it):** "Because of Ham's actions, Noah spoke a curse—but the words recorded in Genesis 9:25 name Ham's son: 'Cursed be Canaan…'" | Makes clear why Canaan was named |
 | 5 | Added "READ IT FOR YOURSELF: Genesis 9:18–27" | Supports the chapter's message: read before you repeat |
 | 5 | "your people-read it" → "your people—read it" | Punctuation |
@@ -164,7 +168,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
 | Trim box / bleed box | ✅ Set on every page (right pages trim x = 0–8.5 in; left pages x = 0.125–8.625 in) |
 | Orientation | ✅ All portrait, no rotation |
 | Fonts | ✅ 6 of 6 fonts embedded and subset (Cinzel, Literata; SIL Open Font License, so commercial use is allowed). No non-embedded fonts. |
-| Safe area | ✅ All 3,017 words checked by position. The closest is 0.54 in from the trim (KDP minimum 0.375 in). All pictures are ≥ 0.45 in inside the trim. |
+| Safe area | ✅ All 3,085 words checked by position. The closest is 0.54 in from the trim (KDP minimum 0.375 in). All pictures are ≥ 0.45 in inside the trim. |
 | Gutter | ✅ Text inside margin 0.875 in (KDP minimum 0.375 in for 24–150 pages) |
 | Image resolution | ⚠️ 302 DPI effective, but enlarged from about 121 DPI originals (see Open Issues #7) |
 | Crop / printer marks | ✅ None |

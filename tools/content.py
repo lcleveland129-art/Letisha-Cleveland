@@ -9,6 +9,7 @@ Block types:
   ('thought', label, text)    highlighted lesson / thought (label may be '')
   ('pledge', text)            "I WILL READ BEFORE I REPEAT."
   ('turn', text)              TURN THE PAGE teaser
+  ('map', label, [(name, today)])  ancient place -> today's map box
   ('read', label, refs)       READ IT FOR YOURSELF / READ AND DISCOVER band (bottom of page)
   ('end',)                    The Journey Continues box (end of Book 1)
 """
@@ -69,6 +70,13 @@ CHAPTERS = [
   ('names', ["Cush", "Mizraim", "Put", "Canaan"]),
   ('p', "These names become important as the Bible describes peoples and lands of the ancient world."),
   ('p', "Mizraim is the Hebrew biblical name associated with Egypt. Cush is commonly associated with lands south of Egypt, including areas connected with ancient Nubia and Kush."),
+  ('p', "Put is often associated with lands west of Egypt, such as ancient Libya. So three of Ham’s sons—Cush, Mizraim, and Put—are linked with lands in Africa. Canaan’s family settled in the land of Canaan, northeast of Egypt."),
+  ('map', "ON TODAY’S MAP", [
+      ("Cush (Kush, Nubia)", "Sudan and southern Egypt"),
+      ("Mizraim", "Egypt"),
+      ("Put", "Libya"),
+      ("Canaan", "Israel, the Palestinian territories (the West Bank and Gaza), Lebanon, and parts of Syria and Jordan"),
+  ]),
   ('p', "Scholars continue to study exactly how every biblical name and ancient geographical region should be identified, so Grandma reminded the children of something important: “Sometimes the Bible tells us one thing, while history and archaeology help us investigate another. We should never turn an interpretation into a fact that Scripture itself does not state.”"),
   ('p', "Joesiah nodded. “So we have to know the difference between what the Bible actually says and what people say it means?”"),
   ('p', "“Exactly.” Grandma pointed again at the family tree. “And there is one name here that people have misunderstood for generations.”"),

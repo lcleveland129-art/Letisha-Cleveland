@@ -26,7 +26,14 @@ SCALE = 2.5
 EDITS = {
     0:  [('folio', (483, 1205, 490, 1222), '5', 'dark')],
     1:  [('folio', (488, 1211, 500, 1229), '7', 'dark')],
-    2:  [('line', (280, 19, 560, 49), 'CHAPTER 4', 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (440, 1202, 458, 1219), '11', 'dark')],
+    2:  [('block', (732, 423, 918, 572),
+          ['The land of Canaan', '(today: Israel, Palestine,', 'Lebanon, and parts of',
+           'Syria and Jordan).', 'Known for fertile land,', 'cities, and trade routes.',
+           'Canaan was cursed', '(Genesis 9:25), not Ham and', 'not all of his descendants.'],
+          dict(align='center', cx=825, ref_text='cities, and trade routes.', ref_w=173, size_k=0.82,
+               baselines=[441 + k * 15.9 for k in range(9)], font='LiberationSerif-Regular',
+               ink=135, dark=True)),
+         ('line', (280, 19, 560, 49), 'CHAPTER 4', 'CHAPTER 7'), ('folio', (440, 1202, 458, 1219), '11', 'dark')],
     3:  [('folio', (484, 1197, 505, 1216), '9', 'light')],
     4:  [('block', (548, 306, 925, 413),
           ['In Genesis 9, Ham saw his father',
@@ -37,10 +44,24 @@ EDITS = {
                baselines=[325.5, 352, 378.5, 405])),
          ('plain', (598, 463, 890, 481), 'shall he be unto his brothers.”', 'shall be be unto his brothers.”'),
          ('folio', (487, 1203, 511, 1223), '13', 'light')],
-    5:  [('line', (200, 35, 420, 63), 'CHAPTER 6', 'CHAPTER 8', 'CHAPTER 10', 'CHAPTER 12'), ('folio', (432, 1204, 450, 1221), '15', 'dark')],
-    6:  [('line', (230, 33, 440, 63), 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (479, 1209, 497, 1226), '17', 'dark')],
+    5:  [('block', (124, 202, 506, 418),
+          'After the flood, the families of Ham\u2019s sons Cush, Mizraim, and Put built great '
+          'nations in Africa. The land was rich with rivers, fertile soil, gold, minerals, and '
+          'wisdom. The people created advanced cities, learned systems of mathematics, medicine, '
+          'and astronomy, and built monuments that still inspire the world today.',
+          dict(wrap=True, max_w=372, ref_text='After the flood, Ham\u2019s descendants', ref_w=338,
+               left=130, baselines=[224, 250.5, 277, 303.5, 330, 356.5, 383, 409.5],
+               font='LiberationSerif-Regular', ink=110, dark=True)),
+         ('line', (200, 35, 420, 63), 'CHAPTER 6', 'CHAPTER 8'), ('folio', (432, 1204, 450, 1221), '15', 'dark')],
+    6:  [('line', (230, 33, 440, 63), 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11'), ('folio', (479, 1209, 497, 1226), '17', 'dark')],
     7:  [('line', (360, 26, 600, 56), 'CHAPTER 8', 'CHAPTER 10', 'CHAPTER 12'), ('folio', (468, 1209, 487, 1226), '19', 'dark')],
-    8:  [('line', (245, 31, 470, 60), 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (496, 1202, 514, 1219), '21', 'dark')],
+    8:  [('block', (688, 80, 942, 220),
+          ['\u201cYou intended to harm me,', 'but God intended it', 'for good.\u201d'],
+          dict(align='center', cx=815, ref_text='\u201cGod allowed everything', ref_w=220,
+               baselines=[112, 139, 166], font='LiberationSerif-Italic', ink=110, dark=True,
+               extra=[dict(text='Genesis 50:20', font='LiberationSerif-Regular',
+                           ref_text='Genesis 37:28, 36', ref_w=127, baseline=212)])),
+         ('line', (245, 31, 470, 60), 'CHAPTER 9', 'CHAPTER 11'), ('folio', (496, 1202, 514, 1219), '21', 'dark')],
     9:  [('block', (58, 255, 321, 315),
           ['Joseph worked in Potiphar\u2019s house.',
            'He was honest, skilled, and trusted',
@@ -148,18 +169,52 @@ def draw_plain(img, text, cx, baseline, orig_w, old_text, color, fonts):
     ImageDraw.Draw(img).text((cx, baseline), text, font=f, fill=color, anchor='ms')
 
 
+def _wrap(text, f, max_w):
+    lines, cur = [], ''
+    for w in text.split(' '):
+        t = (cur + ' ' + w).strip()
+        if f.getlength(t) <= max_w or not cur:
+            cur = t
+        else:
+            lines.append(cur); cur = w
+    lines.append(cur)
+    return lines
+
+
 def draw_block(img, lines, ref, color, fonts):
-    """Re-set a short left-aligned paragraph on the original baselines, sized so the
-    original first line would have exactly its measured width."""
-    path = fonts + '/' + ref.get('font', 'Literata-Regular') + '.ttf'
-    f = ImageFont.truetype(path, 100)
-    size = max(8, int(round(100 * ref['ref_w'] * SCALE / f.getlength(ref['ref_text']))))
+    """Re-set a short paragraph on the original baselines. The type size is chosen so the
+    original reference line would have exactly its measured width (ref_w, scaled by `size_k`).
+      wrap=True : `lines` is one string, re-wrapped to max_w (size shrinks if it needs more
+                  lines than there are baselines)
+      align     : 'left' (x = left) or 'center' (x = cx)
+      extra     : further single lines (e.g. a Scripture reference) with their own font/size
+    """
+    def font_for(name, ref_text, ref_w):
+        path = fonts + '/' + name + '.ttf'
+        f = ImageFont.truetype(path, 100)
+        return path, max(8, int(round(100 * ref_w * SCALE / f.getlength(ref_text))))
+    path, size = font_for(ref.get('font', 'Literata-Regular'), ref['ref_text'], ref['ref_w'] * ref.get('size_k', 1))
     f = ImageFont.truetype(path, size)
+    if ref.get('wrap'):
+        while True:
+            f = ImageFont.truetype(path, size)
+            out = _wrap(lines, f, ref['max_w'] * SCALE)
+            if len(out) <= len(ref['baselines']) or size < 10:
+                break
+            size -= 1
+        lines = out
     d = ImageDraw.Draw(img)
-    x = (ref['left'] - CROP['l']) * SCALE
-    for line, b in zip(lines, ref['baselines']):
-        d.text((x, (b - CROP['t']) * SCALE), line, font=f, fill=color, anchor='ls',
+
+    def put(text, font, b, align):
+        y = (b - CROP['t']) * SCALE
+        x, anchor = ((ref['cx'] - CROP['l']) * SCALE, 'ms') if align == 'center' else ((ref['left'] - CROP['l']) * SCALE, 'ls')
+        d.text((x, y), text, font=font, fill=color, anchor=anchor,
                stroke_width=ref.get('stroke', 0), stroke_fill=color)
+    for line, b in zip(lines, ref['baselines']):
+        put(line, f, b, ref.get('align', 'left'))
+    for ex in ref.get('extra', []):
+        p2, s2 = font_for(ex['font'], ex['ref_text'], ex['ref_w'])
+        put(ex['text'], ImageFont.truetype(p2, s2), ex['baseline'], ref.get('align', 'left'))
 
 
 def draw_folio(img, text, cx, baseline, cap_h, color, fonts):
@@ -225,9 +280,17 @@ def process(i):
             core_m = (lum < old_text.get('ink', 150)).astype(np.uint8)
             big = cv2.dilate(core_m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (23, 23))) > 0
             wgt = (~big).astype(np.float32)
-            num = cv2.GaussianBlur(region * wgt[..., None], (0, 0), 14)
-            den = cv2.GaussianBlur(wgt, (0, 0), 14)[..., None]
-            fill = num / np.maximum(den, 1e-3)
+            # normalized convolution; widen the sampling radius where nearby clean parchment
+            # is scarce (dense text blocks), so the fill never collapses toward black
+            fill = np.zeros_like(region); done = np.zeros(wgt.shape, bool)
+            for sig in (14, 40, 100, 250):
+                num = cv2.GaussianBlur(region * wgt[..., None], (0, 0), sig)
+                den = cv2.GaussianBlur(wgt, (0, 0), sig)
+                ok = (den > 0.2) & ~done
+                fill[ok] = (num[ok] / den[ok][:, None])
+                done |= ok
+            if (~done).any():
+                fill[~done] = np.median(region[wgt > 0], axis=0)
             rng2 = np.random.default_rng(42)
             fill += rng2.normal(0, 3.0, fill.shape)
             region[big] = fill[big]

@@ -111,6 +111,8 @@ def styles(size, lf=1.38):
                                   textColor=NAVY),
         'tlabel': ParagraphStyle('tl', fontName='Cinzel-Bold', fontSize=size * 0.72, leading=size * 1.05,
                                  textColor=GOLD_DK, spaceAfter=2),
+        'mapline': ParagraphStyle('ml', fontName='Literata', fontSize=size * 0.92, leading=size * 1.3,
+                                  textColor=NAVY, leftIndent=10, firstLineIndent=-10),
         'pledge': ParagraphStyle('pl', fontName='Cinzel-Black', fontSize=size * 1.12, leading=size * 1.5,
                                  textColor=MAROON, alignment=TA_CENTER, spaceBefore=0, spaceAfter=size * 0.45),
         'turn': ParagraphStyle('tu', fontName='Literata-Italic', fontSize=size * 0.95, leading=size * 1.35,
@@ -159,6 +161,13 @@ def flowables(blocks, S, width):
                 inner.append(Paragraph(b[1], S['tlabel']))
             inner.append(Paragraph(b[2], S['thought']))
             out.append(boxed(inner, width, HexColor('#F7EED8'), GOLD, pad=6, left_bar=True))
+            out.append(Spacer(1, S['p'].fontSize * 0.5))
+        elif k == 'map':
+            inner = [Paragraph(b[1], S['tlabel'])]
+            for name, today in b[2]:
+                inner.append(Paragraph('<font name="Literata-Bold">%s:</font> %s' % (name, today), S['mapline']))
+            out.append(Spacer(1, 2))
+            out.append(boxed(inner, width, HexColor('#F7EED8'), GOLD, pad=7, left_bar=True))
             out.append(Spacer(1, S['p'].fontSize * 0.5))
         elif k == 'pledge':
             out.append(Paragraph(b[1], S['pledge']))

@@ -41,7 +41,13 @@ EDITS = {
     6:  [('line', (230, 33, 440, 63), 'CHAPTER 7', 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (479, 1209, 497, 1226), '17', 'dark')],
     7:  [('line', (360, 26, 600, 56), 'CHAPTER 8', 'CHAPTER 10', 'CHAPTER 12'), ('folio', (468, 1209, 487, 1226), '19', 'dark')],
     8:  [('line', (245, 31, 470, 60), 'CHAPTER 9', 'CHAPTER 11', 'CHAPTER 15'), ('folio', (496, 1202, 514, 1219), '21', 'dark')],
-    9:  [('folio', (460, 1203, 481, 1219), '27', 'dark')],   # original label CHAPTER 12 is now correct
+    9:  [('block', (58, 255, 321, 315),
+          ['Joseph worked in Potiphar\u2019s house.',
+           'He was honest, skilled, and trusted',
+           'with responsibility.'],
+          dict(ref_text='He was honest, skilled, and trusted', ref_w=254, left=63,
+               baselines=[269, 290, 311], font='LiberationSerif-Regular', ink=110, dark=True, stroke=1)),
+         ('folio', (460, 1203, 481, 1219), '27', 'dark')],   # original label CHAPTER 12 is now correct
     10: [('line', (245, 38, 480, 69), 'CHAPTER 11', 'CHAPTER 15'), ('folio', (489, 1196, 509, 1212), '25', 'dark')],
     11: [('line', (425, 34, 665, 65), 'CHAPTER 13', 'CHAPTER 17'), ('line', (260, 957, 770, 991), 'KEY LESSONS from BOOK 1', 'KEY LESSONS from PART 1'),
          ('folio', (474, 1197, 495, 1214), '29', 'dark')],
@@ -145,14 +151,15 @@ def draw_plain(img, text, cx, baseline, orig_w, old_text, color, fonts):
 def draw_block(img, lines, ref, color, fonts):
     """Re-set a short left-aligned paragraph on the original baselines, sized so the
     original first line would have exactly its measured width."""
-    path = fonts + '/Literata-Regular.ttf'
+    path = fonts + '/' + ref.get('font', 'Literata-Regular') + '.ttf'
     f = ImageFont.truetype(path, 100)
     size = max(8, int(round(100 * ref['ref_w'] * SCALE / f.getlength(ref['ref_text']))))
     f = ImageFont.truetype(path, size)
     d = ImageDraw.Draw(img)
     x = (ref['left'] - CROP['l']) * SCALE
     for line, b in zip(lines, ref['baselines']):
-        d.text((x, (b - CROP['t']) * SCALE), line, font=f, fill=color, anchor='ls')
+        d.text((x, (b - CROP['t']) * SCALE), line, font=f, fill=color, anchor='ls',
+               stroke_width=ref.get('stroke', 0), stroke_fill=color)
 
 
 def draw_folio(img, text, cx, baseline, cap_h, color, fonts):
@@ -193,7 +200,9 @@ def process(i):
         if not core.any():
             log.append((kind, new, 'NO GLYPHS'))
             continue
-        if kind in ('plain', 'block'):
+        if kind == 'block' and old_text.get('dark'):
+            color = tuple(int(v) for v in np.median(roi[lum < 70] if (lum < 70).sum() > 50 else roi[core], axis=0))
+        elif kind in ('plain', 'block'):
             color = tuple(int(v) for v in np.median(roi[core], axis=0))
         elif kind == 'line':
             # solid stroke colour of the original lettering (darkest ink pixels)
@@ -213,7 +222,7 @@ def process(i):
             # large text block: cover the letters AND their light sharpening halo, then fill
             # from the surrounding clean parchment only (normalized convolution) plus grain
             region = rgb[y0:y1, x0:x1].astype(np.float32)
-            core_m = (lum < 150).astype(np.uint8)
+            core_m = (lum < old_text.get('ink', 150)).astype(np.uint8)
             big = cv2.dilate(core_m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (23, 23))) > 0
             wgt = (~big).astype(np.float32)
             num = cv2.GaussianBlur(region * wgt[..., None], (0, 0), 14)

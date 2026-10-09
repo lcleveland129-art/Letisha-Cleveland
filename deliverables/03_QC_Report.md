@@ -87,7 +87,7 @@ Checks that passed:
 | 20 / 21 | L / R | Ch. 9 text / "Joseph Comes to Egypt" | CHAPTER 11 → 9; page number 19 → 21 |
 | 22 / 23 | L / R | Ch. 10 text / Scripture Spotlight (Genesis 39:20–21) | Ch. 10's former picture moved to Ch. 12, as you asked; Ch. 10 has no artwork of its own |
 | 24 / 25 | L / R | Ch. 11 text / "Joseph Rises to Power" | CHAPTER 15 → 11; page number 23 → 25 |
-| 26 / 27 | L / R | Ch. 12 text / "Joseph Rises in Egypt" | Its original label "CHAPTER 12" is now correct; page number 20 → 27; its "A Greater Purpose" panel shows the family reunion |
+| 26 / 27 | L / R | Ch. 12 text / "Joseph Rises in Egypt" | Its original label "CHAPTER 12" is now correct; page number 20 → 27; its "A Greater Purpose" panel shows the family reunion; "Pharaoh's house" → "Potiphar's house" |
 | 28 / 29 | L / R | Ch. 13 text / "What We Learned" | CHAPTER 17 → 13; "Key Lessons from Part 1" → "Book 1"; page number 25 → 29 |
 | 30 / 31 | L / R | Ch. 14 text / Book 2 preview | "PART 2" → "BOOK 2"; page number 26 → 31; Book 2 preview now only at the end |
 
@@ -107,6 +107,7 @@ KDP adds one blank page after page 31 (odd page count), so the printed book will
   - See the resolution warning in Open Issues #7: enlarging cannot add detail that wasn't in the originals.
 - **Relettered:**
   - 9 chapter/series labels, 13 page numbers and 1 Scripture misprint.
+  - The Chapter 12 "A Faithful Servant" panel: "Pharaoh's house" → "Potiphar's house" (Genesis 39:1–4). All three lines were relettered together.
   - The first paragraph of the Chapter 5 "What Happened with Canaan?" box. It wrongly said "Noah saw something wrong and responded in anger". It now reads: "In Genesis 9, Ham saw his father uncovered and told his brothers. Because of Ham's actions, Noah cursed Ham's son, Canaan:"
   - The old lettering was removed with inpainting (filling in from the surrounding background), and new lettering set in a matching small-caps serif.
   - Size, position and colour were sampled from the original label.

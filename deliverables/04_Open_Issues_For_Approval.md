@@ -62,7 +62,7 @@ This reads acceptably as "chapter title + illustration title". If you want them 
 
 ## B. Accuracy problems printed inside the artwork (need approval to reletter, or replacement art)
 
-Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), and the Chapter 5 "What Happened with Canaan?" box (item 2 above). The rest are wording or accuracy issues, left for you to decide:
+Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), the Chapter 5 "What Happened with Canaan?" box (item 2 above), and "Pharaoh's house" → "Potiphar's house" (6c). The rest are wording or accuracy issues, left for you to decide:
 
 6a. ✅ **Chapter 5 art.** Fixed (see item 2).
 
@@ -72,9 +72,7 @@ Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), and 
      - Relabel it as a summary (remove the quotation marks and reference).
      - Or replace it with Genesis 50:20 or Genesis 39:2.
 
-6c. **Chapter 12 art ("Joseph Rises in Egypt", "A Faithful Servant" panel)** says "*Joseph worked in Pharaoh's house.*"
-   - Genesis 39 says **Potiphar's** house. Potiphar was one of Pharaoh's officials.
-   - **Suggested:** "Joseph worked in the house of Potiphar, one of Pharaoh's officials."
+6c. ✅ **Chapter 12 art ("A Faithful Servant" panel).** Fixed as you asked. "Joseph worked in Pharaoh's house" → "Joseph worked in **Potiphar's** house" (Genesis 39:1–4). The panel's three lines were relettered together so the type matches.
 
 6d. **Chapter 6 art** says "*After the flood, Ham's descendants built great nations in Africa.*"
    - It states as fact a link that the text (Chapter 4) carefully presents as association and interpretation.
@@ -94,7 +92,7 @@ Fixed: the misprint "shall **be** be" → "shall **he** be" (Genesis 9:25), and 
 - The pictures in your PDF are only **980 × 1268 pixels**. At the printed size (7.55 × 10.1 in), that's about **121 DPI**. KDP recommends **300 DPI**.
 - I enlarged them to 302 DPI with high-quality standard resampling. I deliberately did **not** use AI "upscalers", because those redraw faces.
 - This prevents jagged pixels and passes KDP's resolution check, but it can't add detail. **Small lettering inside the busy panel pictures will print soft**, especially Chapters 8, 11 and 12.
-- **Best fix (you're looking for them):** send me the original illustration files at **at least 2,300 × 3,050 pixels**, without the photographed-book frame. I'll drop them into the same layout.
+- **Status:** you've confirmed there are no higher-resolution files, so the book uses the enlarged versions. They pass KDP's resolution check. Order a printed proof to judge how sharp the small panel lettering looks. If higher-resolution art ever turns up, send me the original illustration files at **at least 2,300 × 3,050 pixels**, without the photographed-book frame. I'll drop them into the same layout.
 
 ### 8. Character consistency (noted, no changes made)
 Faces, hair textures and skin tones are consistent. Outfits and hair styling vary between pictures:

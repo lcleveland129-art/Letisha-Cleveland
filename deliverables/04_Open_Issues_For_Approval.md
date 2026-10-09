@@ -98,24 +98,30 @@ Faces, hair textures and skin tones are consistent. Outfits and hair styling var
 
 These read naturally as "different days on the journey". If you want them uniform, those pictures would need to be redone by your illustrator. I did not alter any character.
 
-## D. Cover (separate file, not changed)
+## D. Cover: ✅ formatted (`05_KDP_Cover_Joesiah_Malani_Book1.pdf`)
 
-9. **ISBN:**
-   - The cover prints ISBN **978-1-736274-00-0**. That number fails the ISBN check-digit test; with that prefix, the last digit would have to be 2. It looks like a placeholder.
-   - Use your real ISBN (KDP's free one, or your own) and make sure it matches the KDP listing.
-10. **Cover width must match the new page count:**
-    - The draft is 17.320 in wide, which is correct for **30** pages.
-    - The new interior is 31 pages, and KDP will count it as 32 after adding a blank page.
-    - At 32 pages on white paper with premium color, the full-wrap cover must be **17.325 × 11.25 in** (spine 0.0751 in).
-    - Use KDP's cover calculator with the final page count.
-11. **Cover resolution:** the cover images are only about 86 DPI. Supply higher-resolution cover art.
-12. **Motto mismatch:**
-    - The back cover says "Know Your History. Be Proud of Your Story. Walk in Your Purpose."
-    - The interior motto is "Know the Word. Seek the Truth. Remember who you are. Walk in the purpose God gave you."
-    - Choose whether to align them.
-13. **Spine:** there is no spine text. That's correct, because KDP only allows spine text on books over 79 pages.
+Built from your cover draft. The cover artwork itself was not changed except where noted below.
 
-If you send approved high-resolution cover artwork and ask, I'll format the full-wrap cover PDF.
+| Item | Result |
+|---|---|
+| Size | **17.325 × 11.25 in**. Back (8.5 in) + spine (0.0751 in) + front (8.5 in), plus 0.125 in bleed all round. Calculated for **32 pages**: KDP counts the 31-page interior as 32 after adding a blank page. |
+| Author | Banner relettered to **"By LeTisha C. Cleveland"**, in matching gold. It now matches the interior. |
+| ISBN | The placeholder "ISBN 978-1-736274-00-0" (not a valid number) and its fake barcode are **covered by a clean white box**. The box includes KDP's barcode spot (2 × 1.2 in, 0.25 in from the spine and bottom edge), so **KDP prints the real barcode there** for its free ISBN. |
+| Spine | No text, which is correct: KDP only allows spine text on books over 79 pages. The spine is filled from the edges of the front and back art, so a small printing shift won't show a stripe. |
+| Safe zone | All cover text is at least 0.15 in inside the trim (KDP minimum 0.125 in). The closest items are the back-cover headline and the crown on the front. |
+| Fonts | No live text in the PDF, so there's nothing to embed. |
+| Resolution | ⚠️ The draft artwork is only 738 × 1024 px (about 86 DPI). I enlarged it to 300 DPI with high-quality resampling. It passes KDP's check, but the **cover will print noticeably softer than the interior**. This is the most visible part of the book, so check it carefully in the printed proof. |
+
+**Your choices when you set up the book in KDP:**
+- **Paperback content → ISBN:** choose "Get a free KDP ISBN". Your cover is ready for KDP's barcode.
+- **If you buy your own ISBN instead:** tell me the number. I'll put its real barcode in the white box.
+- **Cover → "Upload a cover you already have"**, then choose `05_KDP_Cover_Joesiah_Malani_Book1.pdf`.
+- **Glossy finish.** If the previewer reports a size mismatch, your final page count differs from 32. Tell me the number KDP shows and I'll resize.
+
+**Optional wording on the cover (not changed):**
+- The back-cover motto ("Know Your History. Be Proud of Your Story. Walk in Your Purpose.") differs from the motto inside the book.
+- The back cover says the children "travel back in time with Grandma". That's fine if time travel is part of the story's concept. It doesn't repeat the old series name.
+- The front cover doesn't say "Book 1". It's optional, and can be added under the title if you want.
 
 ## E. Optional editorial suggestions (not applied)
 

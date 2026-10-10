@@ -7,6 +7,7 @@ By LeTisha C. Cleveland. This is the Amazon KDP paperback production files: 8.5 
 | # | File | What it is |
 |---|------|-----------|
 | 1 | `01_KDP_Interior_Joesiah_Malani_Book1.pdf` | **Upload this to KDP** as the paperback interior (31 pages, 8.625 × 11.25 in with bleed, all fonts embedded) |
+| 1b | `01b_KDP_Interior_Joesiah_Malani_Book1_SMALL.pdf` | Same interior, smaller file (18 MB; pictures more compressed, still 300 DPI). Good for sharing and previewing; also KDP-compliant. |
 | 2 | `02_Editable_Manuscript_Joesiah_Malani_Book1.docx` | Editable manuscript in the same page order. Fonts: Literata and Cinzel (free; in `tools/fonts/`). |
 | 3 | `03_QC_Report.md` / `.docx` | Page-by-page quality-control report: what was wrong, what was corrected, and the KDP checks |
 | 4 | `04_Open_Issues_For_Approval.md` / `.docx` | Decisions and replacement artwork still needed from the author |

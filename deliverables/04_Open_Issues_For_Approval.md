@@ -105,6 +105,7 @@ Built from your cover draft. The cover artwork itself was not changed except whe
 | Item | Result |
 |---|---|
 | Size | **17.325 × 11.25 in**. Back (8.5 in) + spine (0.0751 in) + front (8.5 in), plus 0.125 in bleed all round. Calculated for **32 pages**: KDP counts the 31-page interior as 32 after adding a blank page. |
+| Book number | ✅ **"BOOK 1"** added under the title, in the gold rule between "NOAH'S BLOODLINE" and the subtitle. It replaces the small ankh there and uses the title's navy. |
 | Author | Banner relettered to **"By LeTisha C. Cleveland"**, in matching gold. It now matches the interior. |
 | ISBN | The placeholder "ISBN 978-1-736274-00-0" (not a valid number) and its fake barcode are **covered by a clean white box**. The box includes KDP's barcode spot (2 × 1.2 in, 0.25 in from the spine and bottom edge), so **KDP prints the real barcode there** for its free ISBN. |
 | Spine | No text, which is correct: KDP only allows spine text on books over 79 pages. The spine is filled from the edges of the front and back art, so a small printing shift won't show a stripe. |
@@ -121,7 +122,6 @@ Built from your cover draft. The cover artwork itself was not changed except whe
 **Optional wording on the cover (not changed):**
 - The back-cover motto ("Know Your History. Be Proud of Your Story. Walk in Your Purpose.") differs from the motto inside the book.
 - The back cover says the children "travel back in time with Grandma". That's fine if time travel is part of the story's concept. It doesn't repeat the old series name.
-- The front cover doesn't say "Book 1". It's optional, and can be added under the title if you want.
 
 ## E. Optional editorial suggestions (not applied)
 

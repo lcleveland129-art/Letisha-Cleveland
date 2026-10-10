@@ -6,6 +6,7 @@ The draft's back and front panels are each 8.625 x 11.25 in (trim + outer bleed)
 are placed edge-to-edge with the spine between them.
 
 Changes to the draft:
+  - 'BOOK 1' set in the gold rule under the title (replacing the small ankh)
   - author banner re-lettered "By LeTisha C. Cleveland" (matches interior + KDP listing)
   - the invalid placeholder ISBN/barcode label is covered by a clean white box that also
     contains KDP's barcode position (2 x 1.2 in, 0.25 in from spine and bottom trim)
@@ -84,9 +85,58 @@ def reletter_author(front):
     return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), (old, new, size)
 
 
+def add_book_label(front):
+    """Replace the small ankh in the gold rule under the title with 'BOOK 1'."""
+    rgb = np.array(front).astype(np.float32)
+    s = lambda v: int(round(v * K))
+    # navy of the 'NOAH'S BLOODLINE' lettering
+    t = rgb[s(196):s(211), s(150):s(590)]
+    navy = np.median(t[t.mean(axis=2) < 60], axis=0)
+    gx0, gx1 = 316, 420            # gap opened in the gold rule (original px)
+    x0, y0, x1, y1 = s(gx0), s(215), s(gx1), s(245)
+    reg = rgb[y0:y1, x0:x1]
+    lum = reg.mean(axis=2)
+    ink = (lum < 185) & (reg[..., 0] > reg[..., 2] + 25)          # gold-brown rule + ankh
+    big = cv2.dilate(ink.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (13, 13))) > 0
+    # sample clean sky from a wider window around the gap
+    wx0, wy0, wx1, wy1 = s(gx0 - 30), s(214), s(gx1 + 30), s(246)
+    win = rgb[wy0:wy1, wx0:wx1]
+    wl = win.mean(axis=2)
+    wink = (wl < 185) & (win[..., 0] > win[..., 2] + 25)
+    wbig = cv2.dilate(wink.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (13, 13))) > 0
+    wgt = (~wbig).astype(np.float32)
+    fill = np.zeros_like(win); done = np.zeros(wgt.shape, bool)
+    for sig in (10, 25, 60, 150):
+        num = cv2.GaussianBlur(win * wgt[..., None], (0, 0), sig)
+        den = cv2.GaussianBlur(wgt, (0, 0), sig)
+        ok = (den > 0.2) & ~done
+        fill[ok] = num[ok] / den[ok][:, None]; done |= ok
+    fill += np.random.default_rng(5).normal(0, 1.5, fill.shape)
+    ox, oy = x0 - wx0, y0 - wy0
+    sub = fill[oy:oy + (y1 - y0), ox:ox + (x1 - x0)]
+    reg[big] = sub[big]
+    rgb[y0:y1, x0:x1] = reg
+    out = Image.fromarray(np.clip(rgb, 0, 255).astype(np.uint8))
+    # 'BOOK 1' in Cinzel Bold, cap height ~15 px (original), centred on the rule
+    path = FONTS + '/Cinzel-Bold.ttf'
+    f100 = ImageFont.truetype(path, 100)
+    bb = f100.getbbox('H'); cap = bb[3] - bb[1]
+    f = ImageFont.truetype(path, int(round(100 * 15.5 * K / cap)))
+    cx, base = 368 * K, 239.5 * K
+    mask = Image.new('L', out.size, 0)
+    ImageDraw.Draw(mask).text((cx, base), 'BOOK 1', font=f, fill=255, anchor='ms')
+    mask = mask.filter(ImageFilter.GaussianBlur(0.7))
+    o = np.array(out).astype(np.float32)
+    a = np.array(mask, np.float32)[..., None] / 255
+    o = o * (1 - a) + navy * a
+    w = ImageDraw.Draw(mask).textlength('BOOK 1', font=f) / K
+    return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), round(w, 1)
+
+
 def main():
     back = upscale(BACK)
     front, info = reletter_author(upscale(FRONT))
+    front, book_w = add_book_label(front)
     back.save(OUTDIR + '/cover_back.jpg', quality=93, subsampling=0, dpi=(300, 300))
     front.save(OUTDIR + '/cover_front.jpg', quality=93, subsampling=0, dpi=(300, 300))
     # spine strip: right edge of back + left edge of front (seamless if the spine shifts)
@@ -115,7 +165,7 @@ def main():
     c.roundRect(bx0, by0, bx1 - bx0, by1 - by0, 6, stroke=0, fill=1)
     c.showPage(); c.save()
     print(dict(pages=PAGES, spine_in=round(SPINE, 4), width_in=round(TOTAL_W, 4), height_in=PANEL_H,
-               ppi=round(back.width / PANEL_W, 1), author=info,
+               ppi=round(back.width / PANEL_W, 1), author=info, book_label_w_px=book_w,
                barcode_box_in=(round(bx0 / IN, 3), round(by0 / IN, 3), round((bx1 - bx0) / IN, 3), round((by1 - by0) / IN, 3))))
 
 

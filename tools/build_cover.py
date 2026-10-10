@@ -6,6 +6,7 @@ The draft's back and front panels are each 8.625 x 11.25 in (trim + outer bleed)
 are placed edge-to-edge with the spine between them.
 
 Changes to the draft:
+  - back-cover motto replaced with the book's motto (same maroon italic)
   - 'BOOK 1' set in the gold rule under the title (replacing the small ankh)
   - author banner re-lettered "By LeTisha C. Cleveland" (matches interior + KDP listing)
   - the invalid placeholder ISBN/barcode label is covered by a clean white box that also
@@ -133,8 +134,52 @@ def add_book_label(front):
     return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), round(w, 1)
 
 
+def replace_motto(back):
+    """Back cover: replace 'Know Your History. / Be Proud of Your Story. / Walk in Your Purpose.'
+    with the book's motto, in the same maroon semibold italic, centred on the same axis."""
+    rgb = np.array(back).astype(np.float32)
+    s = lambda v: int(round(v * K))
+    x0, y0, x1, y1 = s(345), s(415), s(592), s(498)
+    wx0, wy0, wx1, wy1 = s(320), s(408), s(615), s(518)
+    win = rgb[wy0:wy1, wx0:wx1]
+    r, g, b = win[..., 0], win[..., 1], win[..., 2]
+    lum = win.mean(axis=2)
+    ink = (r > g + 25) & (r > b + 30) & (lum < 165)
+    inside = np.zeros(ink.shape, bool); inside[y0 - wy0:y1 - wy0, x0 - wx0:x1 - wx0] = True
+    ink &= inside
+    color = np.median(win[ink & (lum < 90)], axis=0)
+    big = cv2.dilate(ink.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))) > 0
+    wgt = (~big).astype(np.float32)
+    fill = np.zeros_like(win); done = np.zeros(wgt.shape, bool)
+    for sig in (10, 25, 60, 150):
+        num = cv2.GaussianBlur(win * wgt[..., None], (0, 0), sig)
+        den = cv2.GaussianBlur(wgt, (0, 0), sig)
+        ok = (den > 0.2) & ~done
+        fill[ok] = num[ok] / den[ok][:, None]; done |= ok
+    fill += np.random.default_rng(9).normal(0, 2.0, fill.shape)
+    win[big] = fill[big]
+    rgb[wy0:wy1, wx0:wx1] = win
+    out = Image.fromarray(np.clip(rgb, 0, 255).astype(np.uint8))
+    path = FONTS + '/EBGaramond-SemiBoldItalic.ttf'
+    f100 = ImageFont.truetype(path, 100)
+    size = int(round(100 * (571 - 357) * K / f100.getlength('Be Proud of Your Story.') * 0.92))
+    f = ImageFont.truetype(path, size)
+    lines = ['Know the Word.', 'Seek the Truth.', 'Remember who you are.', 'Walk in the purpose God gave you.']
+    mask = Image.new('L', out.size, 0); d = ImageDraw.Draw(mask)
+    cx = 463 * K
+    widths = []
+    for i, ln in enumerate(lines):
+        d.text((cx, (436 + 23 * i) * K), ln, font=f, fill=255, anchor='ms')
+        widths.append(round(f.getlength(ln) / K))
+    mask = mask.filter(ImageFilter.GaussianBlur(0.7))
+    o = np.array(out).astype(np.float32)
+    a = np.array(mask, np.float32)[..., None] / 255
+    o = o * (1 - a) + color * a
+    return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), dict(color=[int(v) for v in color], widths_px=widths)
+
+
 def main():
-    back = upscale(BACK)
+    back, motto = replace_motto(upscale(BACK))
     front, info = reletter_author(upscale(FRONT))
     front, book_w = add_book_label(front)
     back.save(OUTDIR + '/cover_back.jpg', quality=93, subsampling=0, dpi=(300, 300))
@@ -165,7 +210,7 @@ def main():
     c.roundRect(bx0, by0, bx1 - bx0, by1 - by0, 6, stroke=0, fill=1)
     c.showPage(); c.save()
     print(dict(pages=PAGES, spine_in=round(SPINE, 4), width_in=round(TOTAL_W, 4), height_in=PANEL_H,
-               ppi=round(back.width / PANEL_W, 1), author=info, book_label_w_px=book_w,
+               ppi=round(back.width / PANEL_W, 1), author=info, book_label_w_px=book_w, motto=motto,
                barcode_box_in=(round(bx0 / IN, 3), round(by0 / IN, 3), round((bx1 - bx0) / IN, 3), round((by1 - by0) / IN, 3))))
 
 

@@ -21,7 +21,15 @@ The servant knew God had answered his prayer. Rebekah agreed to travel to Canaan
 
 For many years, Isaac and Rebekah had no children, just like Abraham and Sarah. Isaac prayed for his wife, and God answered: Rebekah was going to have **twins**.
 
-Even before they were born, the twins seemed to struggle with each other! The first was born red and hairy, and they named him **Esau**. The second came out holding his brother's heel, and they named him **Jacob**.
+Even before they were born, the twins seemed to struggle with each other! Rebekah asked the Lord why, and God answered her:
+
+> "Two nations are in your womb, and two peoples from within you will be separated; one people will be stronger than the other, and the older will serve the younger." —Genesis 25:23
+
+Joesiah blinked. "God told her the future before the babies were even born?"
+
+"He did," Grandma said. "Keep listening. You'll see those words come true."
+
+When the twins were born, the first was born red and hairy, and they named him **Esau**. The second came out holding his brother's heel, and they named him **Jacob**.
 
 As the boys grew, Esau became a skilled hunter who loved the open country. Jacob was quieter and stayed near the tents. Scripture says Isaac loved Esau more, and Rebekah loved Jacob more.
 
@@ -41,8 +49,8 @@ Joesiah frowned. "Parents having favorites? That sounds like trouble."
 ---
 
 ### Notes for you (not part of the book)
-- **Length:** about 420 words. This is the longest chapter so far. If it's too tight on the page, the map box can be cut, since Chapter 1 already showed Haran on today's map.
+- **Length:** about 490 words, the longest chapter so far. At layout time it may need slightly smaller type or tighter spacing, like Book 1's Chapter 5. You chose to keep the map box and God's words to Rebekah.
 - **Scripture:** Genesis 24:18–19 is quoted from the NIV, shortened with "…". The rest follows Genesis 24:10–67, Genesis 25:20–34 and a one-line summary of Genesis 27 (Jacob's trick). The phrase "Isaac loved her" is Genesis 24:67.
 - **Why Genesis 27 is mentioned:** that one sentence is what makes Jacob run away at the start of Chapter 7.
-- **Not included on purpose:** God's words to Rebekah, "the older will serve the younger" (Genesis 25:23), to keep the page simple. Tell me if you'd like it added.
+- **Added at your request:** God's words to Rebekah (Genesis 25:23, NIV). They come true in Chapter 8, when Jacob blesses the younger grandson first.
 - **Illustration idea:** Rebekah at the well pouring water for the camels, with the servant watching in amazement and Malani helping carry a small jar.

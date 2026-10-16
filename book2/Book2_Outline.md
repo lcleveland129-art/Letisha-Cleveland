@@ -130,4 +130,4 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 1. **Book 3 teaser:** yes, Book 2's last page previews the Yeshua book. Spelling: **Yeshua**.
 2. **Cover scene:** the **Red Sea crossing** (Chapter 13).
 3. **Characters:** Grandma, Joesiah and Malani keep their Book 1 look. Use Book 1's illustrations as the reference.
-4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` and `Chapter_02_Draft.md` (approved), `Chapter_03_Draft.md`, `Chapter_04_Draft.md`.
+4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` and `Chapter_02_Draft.md` (approved), `Chapter_03_Draft.md` to `Chapter_06_Draft.md`.

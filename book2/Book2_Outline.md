@@ -122,12 +122,12 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Story:** At Mount Sinai, God gives the **Ten Commandments**: freedom with a way to live. Numbers 12:1 tells us Moses had a **Cushite wife**; Cush is the land the children learned about in Book 1. Grandma ties together all five stops of the journey and the promise kept across generations.
 - **Lesson:** Freed people are called to live free, love God and love others.
 - **Read it for yourself:** Exodus 19–20 and Numbers 12:1
-- **Ending:** "Our History Continues…", a **Book 3 teaser**. Title to be decided. For example, a journey that leads to **Yeshua**.
+- **Ending:** "Our History Continues…", a **Book 3 teaser**: *From Moses to Yeshua: The Promise Fulfilled*.
 
 ---
 
 ## Decisions (from the author)
-1. **Book 3 teaser:** yes, Book 2's last page previews the Yeshua book. Spelling: **Yeshua**.
+1. **Book 3 teaser:** yes, Book 2's last page previews Book 3, *From Moses to Yeshua: The Promise Fulfilled*. Spelling: **Yeshua**.
 2. **Cover scene:** the **Red Sea crossing** (Chapter 13).
 3. **Characters:** Grandma, Joesiah and Malani keep their Book 1 look. Use Book 1's illustrations as the reference.
 4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` and `Chapter_02_Draft.md` (approved), `Chapter_03_Draft.md` to `Chapter_14_Draft.md` (all 14 drafted). Full manuscript: `Book2_Full_Draft.md`.

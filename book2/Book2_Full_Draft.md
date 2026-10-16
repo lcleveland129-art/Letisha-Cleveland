@@ -665,7 +665,7 @@ Grandma's eyes sparkled. "That, my love, is where we're going next."
 
 **THE JOURNEY CONTINUES**
 **Joesiah & Malani · Book 3**
-*[Title to be decided]*
+***From Moses to Yeshua: The Promise Fulfilled***
 *The promise God made to Abraham keeps going, all the way to **Yeshua**.*
 
 *God keeps His promises, even when it takes generations.*

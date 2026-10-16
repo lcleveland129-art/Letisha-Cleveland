@@ -126,8 +126,8 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 
 ---
 
-## Decisions for you
-1. **Book 3 teaser:** should Book 2's last page preview the Yeshua book? And how should the name be spelled: *Yeshua*, *Yahshua*, or *Jesus (Yeshua)*?
-2. **Cover scene:** baby Moses and Miriam at the Nile (Chapter 10), or the sea crossing (Chapter 13)?
-3. **Characters:** for consistency with Book 1, Grandma, Joesiah and Malani should keep the same faces, hair and skin tones. Use **Book 1's illustrations as the reference** for your illustrator.
-4. **Next step:** once you approve or change this outline, should I draft Chapter 1 in your Book 1 voice for you to edit, or will you write the chapters yourself?
+## Decisions (from the author)
+1. **Book 3 teaser:** yes, Book 2's last page previews the Yeshua book. Spelling to be confirmed: "Yeshua" or "Yeshu".
+2. **Cover scene:** baby Moses in the basket, with Miriam watching (Chapter 10).
+3. **Characters:** Grandma, Joesiah and Malani keep their Book 1 look. Use Book 1's illustrations as the reference.
+4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Chapter 1 draft: `Chapter_01_Draft.md`.

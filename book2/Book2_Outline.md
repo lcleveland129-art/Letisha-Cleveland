@@ -94,7 +94,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Story:** Moses' mother **Jochebed** hides her baby in a basket on the Nile. His sister **Miriam** watches over him. **Pharaoh's daughter**, an Egyptian princess, rescues and adopts him.
 - **Lesson:** God uses mothers, sisters and even unexpected strangers.
 - **Read it for yourself:** Exodus 2:1–10
-- **Illustration idea:** Miriam hiding in the reeds as the princess finds the basket. *This could be the Book 2 cover scene.*
+- **Illustration idea:** Miriam hiding in the reeds as the princess finds the basket.
 
 ## Part Five: A People Are Freed (Moses)
 
@@ -116,7 +116,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Lesson:** Freedom is something to celebrate and to remember.
 - **Read it for yourself:** Exodus 12:37–38, Exodus 14 and Exodus 15:19–21
 - **History note:** the location of the crossing and the date of the Exodus are debated by scholars. Grandma explains this in one sentence.
-- **Illustration idea:** Miriam dancing with a tambourine, with walls of water behind her. *Malani's favorite page.*
+- **Illustration idea:** Miriam dancing with a tambourine, with walls of water behind her. *Malani's favorite page. This is the Book 2 cover scene.*
 
 ### Chapter 14: Freedom With a Purpose
 - **Story:** At Mount Sinai, God gives the **Ten Commandments**: freedom with a way to live. Numbers 12:1 tells us Moses had a **Cushite wife**; Cush is the land the children learned about in Book 1. Grandma ties together all five stops of the journey and the promise kept across generations.
@@ -127,7 +127,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 ---
 
 ## Decisions (from the author)
-1. **Book 3 teaser:** yes, Book 2's last page previews the Yeshua book. Spelling to be confirmed: "Yeshua" or "Yeshu".
-2. **Cover scene:** baby Moses in the basket, with Miriam watching (Chapter 10).
+1. **Book 3 teaser:** yes, Book 2's last page previews the Yeshua book. Spelling: **Yeshua**.
+2. **Cover scene:** the **Red Sea crossing** (Chapter 13).
 3. **Characters:** Grandma, Joesiah and Malani keep their Book 1 look. Use Book 1's illustrations as the reference.
-4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Chapter 1 draft: `Chapter_01_Draft.md`.
+4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` (approved), `Chapter_02_Draft.md`.

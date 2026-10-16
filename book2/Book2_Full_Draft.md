@@ -480,11 +480,11 @@ Joesiah's eyes lit up. "MOSES! The baby from the end of the first book!"
 
 Moses grew up in Pharaoh's palace. But he never forgot that he was a Hebrew.
 
-One day, Moses saw an Egyptian beating a Hebrew worker. In anger, Moses struck the Egyptian and killed him. When Pharaoh found out, Moses ran for his life to the land of **Midian**.
+One day, Moses saw an Egyptian beating a Hebrew worker. Moses rushed in to stop him, but he acted in anger, and the Egyptian lost his life. When Pharaoh heard what had happened, he was furious, so Moses ran away to the land of **Midian**.
 
-Joesiah's eyes went wide. "Moses did that?"
+Joesiah's eyes went wide. "Moses got in that much trouble?"
 
-"He did," Grandma said. "Moses wanted justice, but anger isn't God's way of bringing it. The Bible tells the truth about its heroes, even their mistakes."
+"He did," Grandma said gently. "Moses wanted to protect his people, but he acted in anger instead of waiting on God. The Bible tells the truth about its heroes, even their mistakes. And God still had a plan for Moses."
 
 In Midian, Moses sat down by a well. When some shepherds chased away seven sisters who had come to water their flock, Moses stood up for them and watered their sheep himself.
 

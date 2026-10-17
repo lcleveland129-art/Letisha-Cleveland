@@ -7,7 +7,7 @@ are placed edge-to-edge with the spine between them.
 
 Changes to the draft:
   - back-cover motto replaced with the book's motto (same maroon italic)
-  - 'BOOK 1' set in the gold rule under the title (replacing the small ankh)
+  - 'TIME TRAVEL ADVENTURE • PART 1' set in place of the gold rule under the title
   - author banner re-lettered "By LeTisha C. Cleveland" (matches interior + KDP listing)
   - the invalid placeholder ISBN/barcode label is covered by a clean white box that also
     contains KDP's barcode position (2 x 1.2 in, 0.25 in from spine and bottom trim)
@@ -86,21 +86,24 @@ def reletter_author(front):
     return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), (old, new, size)
 
 
+LABEL = 'TIME TRAVEL ADVENTURE \u2022 PART 1'
+
+
 def add_book_label(front):
-    """Replace the small ankh in the gold rule under the title with 'BOOK 1'."""
+    """Replace the gold rule + ankh under the title with LABEL (matches the KDP title)."""
     rgb = np.array(front).astype(np.float32)
     s = lambda v: int(round(v * K))
     # navy of the 'NOAH'S BLOODLINE' lettering
     t = rgb[s(196):s(211), s(150):s(590)]
     navy = np.median(t[t.mean(axis=2) < 60], axis=0)
-    gx0, gx1 = 316, 420            # gap opened in the gold rule (original px)
+    gx0, gx1 = 150, 595            # whole gold rule + ankh (original px)
     x0, y0, x1, y1 = s(gx0), s(215), s(gx1), s(245)
     reg = rgb[y0:y1, x0:x1]
     lum = reg.mean(axis=2)
     ink = (lum < 185) & (reg[..., 0] > reg[..., 2] + 25)          # gold-brown rule + ankh
     big = cv2.dilate(ink.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (13, 13))) > 0
     # sample clean sky from a wider window around the gap
-    wx0, wy0, wx1, wy1 = s(gx0 - 30), s(214), s(gx1 + 30), s(246)
+    wx0, wy0, wx1, wy1 = s(gx0 - 30), s(212), min(rgb.shape[1], s(gx1 + 30)), s(248)
     win = rgb[wy0:wy1, wx0:wx1]
     wl = win.mean(axis=2)
     wink = (wl < 185) & (win[..., 0] > win[..., 2] + 25)
@@ -122,15 +125,15 @@ def add_book_label(front):
     path = FONTS + '/Cinzel-Bold.ttf'
     f100 = ImageFont.truetype(path, 100)
     bb = f100.getbbox('H'); cap = bb[3] - bb[1]
-    f = ImageFont.truetype(path, int(round(100 * 15.5 * K / cap)))
+    f = ImageFont.truetype(path, int(round(100 * 14.0 * K / cap)))
     cx, base = 368 * K, 239.5 * K
     mask = Image.new('L', out.size, 0)
-    ImageDraw.Draw(mask).text((cx, base), 'BOOK 1', font=f, fill=255, anchor='ms')
+    ImageDraw.Draw(mask).text((cx, base), LABEL, font=f, fill=255, anchor='ms')
     mask = mask.filter(ImageFilter.GaussianBlur(0.7))
     o = np.array(out).astype(np.float32)
     a = np.array(mask, np.float32)[..., None] / 255
     o = o * (1 - a) + navy * a
-    w = ImageDraw.Draw(mask).textlength('BOOK 1', font=f) / K
+    w = ImageDraw.Draw(mask).textlength(LABEL, font=f) / K
     return Image.fromarray(np.clip(o, 0, 255).astype(np.uint8)), round(w, 1)
 
 

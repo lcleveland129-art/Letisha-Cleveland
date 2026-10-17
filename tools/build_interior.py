@@ -177,7 +177,7 @@ def flowables(blocks, S, width):
         elif k == 'end':
             inner = [Paragraph('<font name="Cinzel-Bold" size="%.1f" color="#8A6A1F">THE JOURNEY CONTINUES</font>' % (S['p'].fontSize * 0.95), S['end']),
                      Spacer(1, 4),
-                     Paragraph('<font name="Cinzel-Bold" size="%.1f">%s • Book 2</font>' % (S['p'].fontSize * 1.05, C.SERIES.replace('&', '&amp;')), S['end']),
+                     Paragraph('<font name="Cinzel-Bold" size="%.1f">%s Time Travel Adventure • Part 2</font>' % (S['p'].fontSize * 1.05, C.SERIES.replace('&', '&amp;')), S['end']),
                      Paragraph('<i>%s</i>' % C.NEXT_BOOK, S['end']),
                      Spacer(1, 6),
                      Paragraph('<i>%s</i>' % C.MOTTO, S['motto'])]
@@ -315,13 +315,15 @@ def draw_title(c, page):
     c.drawCentredString(cx, y1 - 3.95 * inch, '&')
     c.setFillColor(NAVY); c.setFont('Cinzel-Black', 50)
     c.drawCentredString(cx, y1 - 4.75 * inch, 'MALANI')
-    ornament(c, cx, y1 - 5.25 * inch, 2.6 * inch)
+    c.setFont('Cinzel-Bold', 20); c.setFillColor(GOLD_DK)
+    c.drawCentredString(cx, y1 - 5.3 * inch, 'TIME TRAVEL ADVENTURE')
+    ornament(c, cx, y1 - 5.65 * inch, 2.6 * inch)
+    c.setFont('Cinzel-Bold', 15); c.setFillColor(GOLD_DK)
+    c.drawCentredString(cx, y1 - 6.15 * inch, 'PART %d' % C.BOOK_NO)
     c.setFont('Cinzel-Bold', 30); c.setFillColor(MAROON)
-    c.drawCentredString(cx, y1 - 5.95 * inch, 'NOAH’S BLOODLINE')
-    c.setFont('Cinzel-Bold', 13); c.setFillColor(GOLD_DK)
-    c.drawCentredString(cx, y1 - 6.45 * inch, 'BOOK %d' % C.BOOK_NO)
+    c.drawCentredString(cx, y1 - 6.75 * inch, 'NOAH’S BLOODLINE')
     c.setFont('Literata-Italic', 15); c.setFillColor(NAVY)
-    c.drawCentredString(cx, y1 - 7.15 * inch, C.TAGLINE)
+    c.drawCentredString(cx, y1 - 7.45 * inch, C.TAGLINE)
     c.setFont('Literata', 13); c.setFillColor(INK)
     c.drawCentredString(cx, y0 + 2.0 * inch, 'Written by')
     c.setFont('Cinzel-Bold', 20); c.setFillColor(NAVY)
@@ -335,8 +337,8 @@ def draw_copyright(c, page):
     st = ParagraphStyle('c', fontName='Literata', fontSize=9.5, leading=13.5, textColor=INK, alignment=TA_CENTER, spaceAfter=8)
     sb = ParagraphStyle('cb', parent=st, fontName='Cinzel-Bold', fontSize=11, leading=15, textColor=NAVY, spaceAfter=2)
     paras = [
-        Paragraph('Joesiah &amp; Malani: Noah’s Bloodline', sb),
-        Paragraph('Joesiah &amp; Malani, Book 1', st),
+        Paragraph('Joesiah &amp; Malani Time Travel Adventure: Part 1: Noah’s Bloodline', sb),
+        Paragraph('Joesiah &amp; Malani, Part 1', st),
         Paragraph('Text copyright © 2026 %s<br/>All rights reserved.' % C.AUTHOR, st),
         Paragraph('No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form '
                   'or by any means—electronic, mechanical, photocopying, recording, or otherwise—without the '
@@ -403,8 +405,8 @@ def draw_spotlight(c, page):
 def main():
     size, LEAD = pick_size()
     c = canvas.Canvas(OUT, pagesize=(PW, PH), pageCompression=1, initialFontName='Literata', initialFontSize=11)
-    c.setTitle('%s: %s' % (C.TITLE, C.SUBTITLE)); c.setAuthor(C.AUTHOR)
-    c.setSubject('%s, Book %d' % (C.SERIES, C.BOOK_NO)); c.setCreator('KDP interior build')
+    c.setTitle('Joesiah & Malani Time Travel Adventure: Part 1: Noah’s Bloodline'); c.setAuthor(C.AUTHOR)
+    c.setSubject('%s, Part %d' % (C.SERIES, C.BOOK_NO)); c.setCreator('KDP interior build')
     report = {'body_pt': size, 'leading': LEAD, 'pages': []}
     chap = {n: (t, b) for n, t, b in C.CHAPTERS}
     for page in range(1, NPAGES + 1):

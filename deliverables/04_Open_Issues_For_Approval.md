@@ -141,3 +141,14 @@ Built from your cover draft. The cover artwork itself was not changed except whe
 - Step through **every page** in KDP's Print Previewer, especially pages 6–7.
 - **AI disclosure:** KDP asks whether text or images are AI-generated. Answer accurately for the illustrations.
 - **Order a printed proof** before publishing, to check colours and how sharp the small lettering inside the art prints.
+
+---
+
+## Update: title matched to KDP (author request)
+
+The book now uses the title entered in KDP: **Joesiah & Malani Time Travel Adventure: Part 1: Noah's Bloodline**.
+- **Title page and copyright page:** "Time Travel Adventure" and "Part 1".
+- **Last page:** the preview reads "Joesiah & Malani Time Travel Adventure • Part 2".
+- **Artwork:** the Chapter 13 art ("Key Lessons from Part 1") and the Part 2 preview art are back to their original "Part" wording.
+- **Front cover:** "TIME TRAVEL ADVENTURE • PART 1" under the title.
+- **KDP fields:** the Title field should read "Joesiah & Malani Time Travel Adventure", the Subtitle "Part 1: Noah's Bloodline", and the Author "LeTisha C. Cleveland".

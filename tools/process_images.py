@@ -70,9 +70,9 @@ EDITS = {
                baselines=[269, 290, 311], font='LiberationSerif-Regular', ink=110, dark=True, stroke=1)),
          ('folio', (460, 1203, 481, 1219), '27', 'dark')],   # original label CHAPTER 12 is now correct
     10: [('line', (245, 38, 480, 69), 'CHAPTER 11', 'CHAPTER 15'), ('folio', (489, 1196, 509, 1212), '25', 'dark')],
-    11: [('line', (425, 34, 665, 65), 'CHAPTER 13', 'CHAPTER 17'), ('line', (260, 957, 770, 991), 'KEY LESSONS from BOOK 1', 'KEY LESSONS from PART 1'),
+    11: [('line', (425, 34, 665, 65), 'CHAPTER 13', 'CHAPTER 17'),
          ('folio', (474, 1197, 495, 1214), '29', 'dark')],
-    12: [('line', (405, 39, 575, 74), 'BOOK 2', 'PART 2'), ('folio', (470, 1201, 490, 1217), '31', 'dark')],
+    12: [('folio', (470, 1201, 490, 1217), '31', 'dark')],
 }
 
 

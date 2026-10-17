@@ -74,16 +74,17 @@ para('', after=90)
 para('JOESIAH', 44, True, color=NAVY, font=HEAD, align=C_, after=0)
 para('&', 30, True, color=GOLD, font=HEAD, align=C_, after=0)
 para('MALANI', 44, True, color=NAVY, font=HEAD, align=C_, after=18)
-para('NOAH’S BLOODLINE', 26, True, color=MAROON, font=HEAD, align=C_, after=4)
-para('BOOK 1', 12, True, color=GOLD, font=HEAD, align=C_, after=18)
+para('TIME TRAVEL ADVENTURE', 16, True, color=GOLD, font=HEAD, align=C_, after=10)
+para('PART 1', 12, True, color=GOLD, font=HEAD, align=C_, after=6)
+para('NOAH’S BLOODLINE', 26, True, color=MAROON, font=HEAD, align=C_, after=18)
 para(C.TAGLINE, 14, italic=True, color=NAVY, align=C_, after=150)
 para('Written by', 12, align=C_, after=2)
 para(C.AUTHOR.upper(), 18, True, color=NAVY, font=HEAD, align=C_)
 page_break()
 # 2 Copyright
 para('', after=300)
-for t, kw in [('Joesiah & Malani: Noah’s Bloodline', dict(size=11, bold=True, color=NAVY, font=HEAD)),
-              ('Joesiah & Malani, Book 1', dict(size=9.5)),
+for t, kw in [('Joesiah & Malani Time Travel Adventure: Part 1: Noah’s Bloodline', dict(size=11, bold=True, color=NAVY, font=HEAD)),
+              ('Joesiah & Malani, Part 1', dict(size=9.5)),
               ('Text copyright © 2026 %s\nAll rights reserved.' % C.AUTHOR, dict(size=9.5)),
               ('No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form or by any means—electronic, mechanical, photocopying, recording, or otherwise—without the prior written permission of the author, except for brief quotations used in reviews.', dict(size=9.5)),
               ('Unless otherwise noted, Scripture quotations in the story text are taken from the Holy Bible, New International Version®, NIV®. Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc.® Used by permission. All rights reserved worldwide. Scripture quotations within the illustrations are drawn from or adapted from several English translations.', dict(size=9.5)),
@@ -138,7 +139,7 @@ def chapter(n, title, blocks):
             para(b[2], 10.5, align=C_)
         elif k == 'end':
             for t, kw in [('THE JOURNEY CONTINUES', dict(size=11, bold=True, color=GOLD, font=HEAD)),
-                          ('Joesiah & Malani • Book 2', dict(size=12, bold=True, color=NAVY, font=HEAD)),
+                          ('Joesiah & Malani Time Travel Adventure • Part 2', dict(size=12, bold=True, color=NAVY, font=HEAD)),
                           (C.NEXT_BOOK, dict(italic=True, color=NAVY)),
                           (C.MOTTO, dict(size=10.5, italic=True, color=NAVY))]:
                 p = para(t, align=C_, after=3, **kw); shade(p, 'F3E7C9')
@@ -159,7 +160,7 @@ for n in range(1, 15):
     if n < 14:
         page_break()
 
-doc.core_properties.title = '%s: %s' % (C.TITLE, C.SUBTITLE)
+doc.core_properties.title = 'Joesiah & Malani Time Travel Adventure: Part 1: Noah’s Bloodline'
 doc.core_properties.author = C.AUTHOR
 doc.core_properties.subject = '%s, Book %d' % (C.SERIES, C.BOOK_NO)
 doc.save(OUT)

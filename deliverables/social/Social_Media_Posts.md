@@ -16,7 +16,7 @@ Replace **[Amazon link]** with your book's Amazon link once it's live. On Instag
 4. …to the great kingdoms of Africa…
 5. …to Joseph in Egypt.
 6. I WILL READ BEFORE I REPEAT.
-7. Joesiah & Malani: Noah's Bloodline · Book 1 · Ages 8–12 · Available on Amazon
+7. Joesiah & Malani: Noah's Bloodline · Part 1 · Ages 8–12 · Available on Amazon
 
 **Sound:** the video is silent, so you can add a sound inside TikTok. Pick a gentle, uplifting instrumental from TikTok's library, or record a voiceover (below).
 
@@ -45,7 +45,7 @@ Replace **[Amazon link]** with your book's Amazon link once it's live. On Instag
 | 4 | The book's motto and "Available on Amazon · Link in bio" |
 
 **Caption:**
-> 📖✨ It's here! *Joesiah & Malani: Noah's Bloodline* (Book 1)
+> 📖✨ It's here! *Joesiah & Malani: Noah's Bloodline* (Part 1)
 >
 > Join Grandma, Joesiah, and Malani on a journey through generations: from Noah's Ark, through the families of Ham's sons, to the great civilizations of Africa and Joseph's rise in Egypt.
 >
@@ -77,7 +77,7 @@ Replace **[Amazon link]** with your book's Amazon link once it's live. On Instag
 >
 > *Joesiah & Malani: Noah's Bloodline* is an illustrated chapter book for children ages 8–12, written to help our kids know God's Word and know their history.
 >
-> In Book 1, Grandma takes Joesiah and Malani on a journey:
+> In Part 1, Grandma takes Joesiah and Malani on a journey:
 > 🌈 Noah, the Ark, and God's covenant
 > 🌍 The families of Ham's sons, and what Genesis 9:25 *really* says
 > 🏛️ The great civilizations of Egypt (Kemet) and Nubia (Kush)
@@ -103,5 +103,5 @@ Replace **[Amazon link]** with your book's Amazon link once it's live. On Instag
 - **Pin the Facebook post** to the top of your page during launch week.
 - **Ask friends and family** to comment and share in the first hour. Early engagement helps all three platforms show your post to more people.
 - **Before posting, check the details:**
-  - Every caption says "Book 1" and "Ages 8–12". Change them if your Amazon listing differs.
+  - Every caption says "Part 1" and "Ages 8–12". Change them if your Amazon listing differs.
   - Only keep "Available on Amazon" once the book is actually live.

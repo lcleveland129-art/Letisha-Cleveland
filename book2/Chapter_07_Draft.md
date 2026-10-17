@@ -1,4 +1,4 @@
-# Book 2 · Chapter 7 — DRAFT
+# Part 2 · Chapter 7 — DRAFT
 
 **CHAPTER 7**
 ## A Ladder to Heaven and a New Name
@@ -52,6 +52,6 @@ Joesiah smiled. "They forgave each other!"
 ### Notes for you (not part of the book)
 - **Length:** about 430 words.
 - **Scripture:** Genesis 28:15, 32:26 and 32:28 are quoted from the NIV. "Surely the Lord is in this place…" is Genesis 28:16 (NIV), given as Jacob's words. The stairway is from Genesis 28:12; the twenty years with Laban from Genesis 31:41; Esau running to embrace him from Genesis 33:4.
-- **Esau's forgiveness:** I added it (Genesis 33) because it's a small, joyful ending that prepares readers for Joseph forgiving his brothers in Book 1. It wasn't in the outline. Cut it if you prefer.
+- **Esau's forgiveness:** I added it (Genesis 33) because it's a small, joyful ending that prepares readers for Joseph forgiving his brothers in Part 1. It wasn't in the outline. Cut it if you prefer.
 - **Who wrestled Jacob:** the draft calls him "a mysterious man", like Genesis 32:24. Jacob later says he saw God face to face (32:30). Grandma doesn't explain it further.
 - **Illustration idea:** Jacob asleep on a stone, with a glowing stairway and angels reaching into the stars. Grandma, Joesiah and Malani look up in wonder.

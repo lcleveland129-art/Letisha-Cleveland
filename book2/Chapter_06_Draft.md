@@ -1,4 +1,4 @@
-# Book 2 · Chapter 6 — DRAFT
+# Part 2 · Chapter 6 — DRAFT
 
 **CHAPTER 6**
 ## Rebekah and the Twins
@@ -49,7 +49,7 @@ Joesiah frowned. "Parents having favorites? That sounds like trouble."
 ---
 
 ### Notes for you (not part of the book)
-- **Length:** about 490 words, the longest chapter so far. At layout time it may need slightly smaller type or tighter spacing, like Book 1's Chapter 5. You chose to keep the map box and God's words to Rebekah.
+- **Length:** about 490 words, the longest chapter so far. At layout time it may need slightly smaller type or tighter spacing, like Part 1's Chapter 5. You chose to keep the map box and God's words to Rebekah.
 - **Scripture:** Genesis 24:18–19 is quoted from the NIV, shortened with "…". The rest follows Genesis 24:10–67, Genesis 25:20–34 and a one-line summary of Genesis 27 (Jacob's trick). The phrase "Isaac loved her" is Genesis 24:67.
 - **Why Genesis 27 is mentioned:** that one sentence is what makes Jacob run away at the start of Chapter 7.
 - **Added at your request:** God's words to Rebekah (Genesis 25:23, NIV). They come true in Chapter 8, when Jacob blesses the younger grandson first.

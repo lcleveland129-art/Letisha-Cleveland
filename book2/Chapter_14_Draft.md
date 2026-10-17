@@ -1,4 +1,4 @@
-# Book 2 · Chapter 14 — DRAFT
+# Part 2 · Chapter 14 — DRAFT
 
 **CHAPTER 14**
 ## Freedom With a Purpose
@@ -44,7 +44,7 @@ Grandma's eyes sparkled. "That, my love, is where we're going next."
 ---
 
 **THE JOURNEY CONTINUES**
-**Joesiah & Malani · Book 3**
+**Joesiah & Malani Time Travel Adventure · Part 3**
 ***From Moses to Yeshua: The Promise Fulfilled***
 *The promise God made to Abraham keeps going, all the way to **Yeshua**.*
 
@@ -57,11 +57,11 @@ Grandma's eyes sparkled. "That, my love, is where we're going next."
 ### Notes for you (not part of the book)
 - **Length:** about 430 words, including the teaser box.
 - **Scripture:** Exodus 19:4, 20:2–3 and Numbers 12:1 are quoted from the NIV. "Three months" is from Exodus 19:1. God's displeasure with Miriam and Aaron is from Numbers 12:4–10.
-- **The Cushite wife:** whether she was Zipporah is debated. Habakkuk 3:7 puts "Cushan" alongside Midian, which some readers take as a link to Zipporah. Grandma presents both views. Cush links back to Book 1's Chapters 4, 6 and 7.
-- **The five-stop timeline:** it matches the preview page at the end of Book 1 word for word, so the two books tie together.
-- **Book 3 teaser:**
+- **The Cushite wife:** whether she was Zipporah is debated. Habakkuk 3:7 puts "Cushan" alongside Midian, which some readers take as a link to Zipporah. Grandma presents both views. Cush links back to Part 1's Chapters 4, 6 and 7.
+- **The five-stop timeline:** it matches the preview page at the end of Part 1 word for word, so the two books tie together.
+- **Part 3 teaser:**
   - **Title (your choice):** *From Moses to Yeshua: The Promise Fulfilled*.
   - **Joesiah's question** about "all peoples on earth" sets it up. Galatians 3:8 links God's promise to Abraham with the good news of Yeshua.
 - **Illustration idea:** two options:
   - **For this chapter:** Mount Sinai at dawn, with Moses holding the two stone tablets and the people camped below. Grandma, Joesiah and Malani sit on a rock with the family-tree scroll.
-  - **For the Book 3 preview page:** an art panel like Book 1's last page.
+  - **For the Part 3 preview page:** an art panel like Part 1's last page.

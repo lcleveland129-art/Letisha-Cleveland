@@ -1,4 +1,4 @@
-# Book 2 · Chapter 11 — DRAFT
+# Part 2 · Chapter 11 — DRAFT
 
 **CHAPTER 11**
 ## The Burning Bush

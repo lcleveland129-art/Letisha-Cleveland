@@ -1,4 +1,4 @@
-# Book 2 · Chapter 12 — DRAFT
+# Part 2 · Chapter 12 — DRAFT
 
 **CHAPTER 12**
 ## "Let My People Go"

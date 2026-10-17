@@ -1,6 +1,6 @@
-# Illustration Brief: *Joesiah & Malani: From Abraham to Moses — The Journey to Freedom*
+# Illustration Brief: *Joesiah & Malani Time Travel Adventure: Part 2: From Abraham to Moses — The Journey to Freedom*
 
-**Series:** Joesiah & Malani, Book 2 · **Author:** LeTisha C. Cleveland · **Readers:** ages 8–12
+**Series:** Joesiah & Malani Time Travel Adventure (3 parts), Part 2 · **Author:** LeTisha C. Cleveland · **Readers:** ages 8–12
 **What's needed:** 15 interior illustrations + 1 front cover + 1 back cover (17 pieces in total)
 
 ---
@@ -8,14 +8,14 @@
 ## 1. The 5 most important rules (please read first)
 
 1. **NO TEXT IN THE ARTWORK.** No chapter numbers, page numbers, titles, captions, Bible verses or labels. The designer adds all text during layout.
-   - *Why:* in Book 1, chapter numbers painted into the art ended up on the wrong pages, and every one had to be repaired by hand.
+   - *Why:* in Part 1, chapter numbers painted into the art ended up on the wrong pages, and every one had to be repaired by hand.
    - **Leave clear, calm space** (sky, wall, sand) in the **top 20%** of each picture so a title can sit there.
 2. **Deliver the flat artwork only.** No "photo of a book" mock-ups, page curls, frames, borders, shadows or backgrounds around the picture.
 3. **High resolution:**
    - **Interior pictures:** at least **2,550 × 3,400 pixels**, portrait, 3:4 ratio.
    - **Covers:** the sizes in section 5.
-   - Book 1's art was only about 1,000 pixels wide and printed soft. Please don't upscale small images to reach these sizes; create or export at full size.
-4. **Keep the main characters identical to Book 1** (section 2). Same faces, skin tones, hair and clothing on every page.
+   - Part 1's art was only about 1,000 pixels wide and printed soft. Please don't upscale small images to reach these sizes; create or export at full size.
+4. **Keep the main characters identical to Part 1** (section 2). Same faces, skin tones, hair and clothing on every page.
 5. **Safe area:** keep faces, hands and any important detail at least **0.5 inch (150 px)** inside every edge. Edges may be trimmed when the book is printed.
 
 **File format:** PNG or maximum-quality JPG, RGB colour, 300 DPI.
@@ -23,21 +23,21 @@
 
 ---
 
-## 2. Main characters — match Book 1 exactly
+## 2. Main characters — match Part 1 exactly
 
 Reference pictures are in the `illustration_reference` folder:
 - `REF_1_Book1_front_cover.jpg` is **the master reference**. Match this look.
 - `REF_2` and `REF_3` show the characters from other angles.
-- `REF_4` is Book 1's last page, which previews Book 2.
+- `REF_4` is Part 1's last page, which previews Part 2.
 
 | Character | Appearance (keep the same in every picture) |
 |---|---|
-| **Grandma** | Warm brown skin. Long **golden-honey locs worn loose** past her shoulders (as on the Book 1 cover). Warm, wise smile. Cream/white wrap dress with gold embroidered trim. Gold **ankh necklace**. |
+| **Grandma** | Warm brown skin. Long **golden-honey locs worn loose** past her shoulders (as on the Part 1 cover). Warm, wise smile. Cream/white wrap dress with gold embroidered trim. Gold **ankh necklace**. |
 | **Joesiah** (boy, about 9–10) | Deep brown skin. Black twists. **Royal-blue tunic with gold embroidery.** Ankh pendant. Curious, thoughtful expressions. Often asks questions, so show him leaning in, pointing or looking up at Grandma. |
 | **Malani** (little girl, about 4) | Brown skin. Curly hair in **puffs with a bow**. **Pink dress with gold trim.** Very expressive: giggling, clapping, twirling, hiding her face when the story is sad. |
 
 **Consistency notes:**
-- In Book 1, Grandma sometimes wore a braided up-do, and Malani sometimes wore other outfits. **For Book 2, please use the single look above on every page.**
+- In Part 1, Grandma sometimes wore a braided up-do, and Malani sometimes wore other outfits. **For Part 2, please use the single look above on every page.**
 - The three of them are **time-travellers watching the story**. Place them in the scene, usually to one side or in the foreground, watching. They should never block the main Bible event.
 
 ---
@@ -45,7 +45,7 @@ Reference pictures are in the `illustration_reference` folder:
 ## 3. Overall style and cultural guidance
 
 **Style:**
-- Match Book 1: vibrant, warm, painterly, semi-realistic digital art.
+- Match Part 1: vibrant, warm, painterly, semi-realistic digital art.
 - Golden-hour and sunrise light, rich colour, cinematic depth.
 - Gold and deep-navy accents, which are the series colours.
 
@@ -152,11 +152,11 @@ Reference pictures are in the `illustration_reference` folder:
 - **Our three:** sit on a rock with the family-tree scroll, looking out over everything they've seen.
 - **Mood:** peace, purpose, a journey completed.
 
-### Book 3 Preview page (last page of the book)
+### Part 3 Preview page (last page of the book)
 - **Scene:** our three on a hill at sunset, looking down a long winding road that leads from Mount Sinai in the distance toward a small town, **Bethlehem**, under one **bright star**.
 - **Title space:** leave space in the top third for the title *"From Moses to Yeshua: The Promise Fulfilled"*, which the designer adds.
 - **Mood:** hope, "the journey continues."
-- **Please don't show** Yeshua (Jesus) himself on this page. The author will decide how he appears in Book 3.
+- **Please don't show** Yeshua (Jesus) himself on this page. The author will decide how he appears in Part 3.
 
 ---
 

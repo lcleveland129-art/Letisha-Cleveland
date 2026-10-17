@@ -1,4 +1,4 @@
-"""Book 2 layout preview: the real KDP page design (same engine as Book 1) filled with the
+"""Part 2 layout preview: the real KDP page design (same engine as Book 1) filled with the
 Book 2 chapter drafts, and labelled placeholders where the illustrations will go.
 
 usage: build_book2_preview.py <scratch dir with build_interior.py> <fonts> <book2 dir> <out.pdf>
@@ -101,7 +101,7 @@ SCENES = {
     12: 'An Israelite family shares the Passover meal by lamplight, dressed and ready to travel.',
     13: 'Miriam dances with her tambourine on the far shore; walls of water and the pillar of fire behind.',
     14: 'Mount Sinai at dawn: Moses carries the stone tablets; the family-tree scroll on a rock below.',
-    'preview': 'Book 3 preview: our three on a hill at sunset, a road from Sinai toward Bethlehem under a bright star.',
+    'preview': 'Part 3 preview: our three on a hill at sunset, a road from Sinai toward Bethlehem under a bright star.',
 }
 
 # ------------------------------------------------------------ reuse the Book 1 page engine
@@ -110,7 +110,8 @@ src = src.replace("sys.path.insert(0, sys.argv[1])\nimport content as C  # noqa:
 src = src.replace("FONTS = sys.argv[2]\nILL = sys.argv[3]\nOUT = sys.argv[4]", "")
 src = src.replace("'<font name=\"Literata-Bold\">%s:</font> %s' % (name, today)",
                   "(('<font name=\"Literata-Bold\">%s:</font> %s' % (name, today)) if name else today)")
-src = src.replace("• Book 2</font>", "• Book 3</font>")
+src = src.replace("Time Travel Adventure • Part 2</font>", "Time Travel Adventure • Part 3</font>")
+src = src.replace("c.setTitle('Joesiah & Malani Time Travel Adventure: Part 1: Noah’s Bloodline')", "c.setTitle('Joesiah & Malani Time Travel Adventure: Part 2: From Abraham to Moses')")
 src = src.replace('    for f, h in zip(fl, hs):\n        w, hh = f.wrap(width, 10000)\n        y -= f.getSpaceBefore()\n        f.drawOn(c, x0 + (width - w) / 2 if isinstance(f, Table) else x0, y - hh)\n        y -= hh + f.getSpaceAfter() + extra', "    floor = y0 + band_h + (12 if band else 0) + folio_room\n    over = False\n    for f, h in zip(fl, hs):\n        w, hh = f.wrap(width, 10000)\n        y -= f.getSpaceBefore()\n        if y - hh < floor + 16:\n            parts = f.split(width, y - floor - 16) if hasattr(f, 'split') else []\n            if parts:\n                w2, h2 = parts[0].wrap(width, 10000)\n                parts[0].drawOn(c, x0, y - h2)\n            over = True\n            break\n        f.drawOn(c, x0 + (width - w) / 2 if isinstance(f, Table) else x0, y - hh)\n        y -= hh + f.getSpaceAfter() + extra\n    if over:\n        words = int(round(-leftover / (size * lf) * 13 / 5.0) * 5)\n        c.setFillColorRGB(0.78, 0.1, 0.1)\n        c.setFont('Literata-Bold', 9.5)\n        c.drawCentredString((x0 + x1) / 2, floor + 2, '\\u25bc TEXT CONTINUES \\u2014 chapter is about %d words too long for one page \\u25bc' % max(words, 5))")
 assert 'TEXT CONTINUES' in src
 src = src.replace("Paragraph('<i>%s</i>' % C.MOTTO, S['motto'])]", "Paragraph('<i>%s</i>' % C.END_LINE, S['motto'])]")
@@ -125,7 +126,7 @@ src = src.replace("        'pledge': ParagraphStyle(",
 """        'tline': ParagraphStyle('tli', fontName='Literata', fontSize=size * 0.95, leading=size * 1.32,
                                 textColor=NAVY, alignment=TA_CENTER),
         'pledge': ParagraphStyle(""", 1)
-for a in ("C = sys.modules['content']", "• Book 3</font>", "C.END_LINE", "'timeline'", "'tline'", "if name else today"):
+for a in ("C = sys.modules['content']", "• Part 3</font>", "C.END_LINE", "'timeline'", "'tline'", "if name else today"):
     assert a in src, a
 
 g = {'__name__': 'b2engine', 'FONTS': FONTS, 'ILL': '', 'OUT': OUT}
@@ -163,7 +164,7 @@ def draw_art(c, page, idx):
     c.setFillColor(g['GOLD_DK']); c.setFont('Cinzel-Bold', 15)
     c.drawCentredString(cx, iy + h * 0.66, 'ILLUSTRATION COMING')
     g['ornament'](c, cx, iy + h * 0.66 - 18, 2.4 * inch)
-    label = 'BOOK 3 PREVIEW PAGE' if idx == 'preview' else 'CHAPTER %d' % idx
+    label = 'PART 3 PREVIEW PAGE' if idx == 'preview' else 'CHAPTER %d' % idx
     c.setFillColor(g['NAVY']); c.setFont('Cinzel-Black', 26)
     c.drawCentredString(cx, iy + h * 0.66 - 60, label)
     if idx != 'preview':
@@ -188,15 +189,17 @@ def draw_title(c, page):
     c.drawCentredString(cx, y1 - 3.55 * inch, '&')
     c.setFillColor(g['NAVY']); c.setFont('Cinzel-Black', 50)
     c.drawCentredString(cx, y1 - 4.35 * inch, 'MALANI')
-    g['ornament'](c, cx, y1 - 4.85 * inch, 2.6 * inch)
+    c.setFont('Cinzel-Bold', 20); c.setFillColor(g['GOLD_DK'])
+    c.drawCentredString(cx, y1 - 4.85 * inch, 'TIME TRAVEL ADVENTURE')
+    g['ornament'](c, cx, y1 - 5.15 * inch, 2.6 * inch)
     c.setFont('Cinzel-Bold', 28); c.setFillColor(g['MAROON'])
-    c.drawCentredString(cx, y1 - 5.55 * inch, 'FROM ABRAHAM TO MOSES')
+    c.drawCentredString(cx, y1 - 6.05 * inch, 'FROM ABRAHAM TO MOSES')
     c.setFont('Cinzel-Bold', 18)
-    c.drawCentredString(cx, y1 - 6.0 * inch, 'THE JOURNEY TO FREEDOM')
+    c.drawCentredString(cx, y1 - 6.5 * inch, 'THE JOURNEY TO FREEDOM')
     c.setFont('Cinzel-Bold', 13); c.setFillColor(g['GOLD_DK'])
-    c.drawCentredString(cx, y1 - 6.5 * inch, 'BOOK 2')
+    c.drawCentredString(cx, y1 - 5.6 * inch, 'PART 2')
     c.setFont('Literata-Italic', 15); c.setFillColor(g['NAVY'])
-    c.drawCentredString(cx, y1 - 7.2 * inch, C.TAGLINE)
+    c.drawCentredString(cx, y1 - 7.3 * inch, C.TAGLINE)
     c.setFont('Literata', 13); c.setFillColor(g['INK'])
     c.drawCentredString(cx, y0 + 2.0 * inch, 'Written by')
     c.setFont('Cinzel-Bold', 20); c.setFillColor(g['NAVY'])
@@ -210,8 +213,8 @@ def draw_copyright(c, page):
     st = ParagraphStyle('c', fontName='Literata', fontSize=9.5, leading=13.5, textColor=g['INK'], alignment=TA_CENTER, spaceAfter=8)
     sb = ParagraphStyle('cb', parent=st, fontName='Cinzel-Bold', fontSize=11, leading=15, textColor=g['NAVY'], spaceAfter=2)
     paras = [
-        Paragraph('Joesiah &amp; Malani: From Abraham to Moses — The Journey to Freedom', sb),
-        Paragraph('Joesiah &amp; Malani, Book 2', st),
+        Paragraph('Joesiah &amp; Malani Time Travel Adventure: Part 2: From Abraham to Moses — The Journey to Freedom', sb),
+        Paragraph('Joesiah &amp; Malani Time Travel Adventure, Part 2 of 3', st),
         Paragraph('Text copyright © [year] %s<br/>All rights reserved.' % C.AUTHOR, st),
         Paragraph('No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form '
                   'or by any means—electronic, mechanical, photocopying, recording, or otherwise—without the '

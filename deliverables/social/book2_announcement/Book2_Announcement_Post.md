@@ -1,4 +1,4 @@
-# Book 2 announcement post
+# Part 2 announcement post
 
 **Images:**
 - `book2_announcement_post.jpg` (1080 × 1350) for Instagram and Facebook feed posts.
@@ -7,7 +7,7 @@
 ## Post (copy and paste)
 
 ```
-📖✨ BOOK 2 IS ON THE WAY! ✨📖
+📖✨ PART 2 IS ON THE WAY! ✨📖
 
 Joesiah & Malani: From Abraham to Moses — The Journey to Freedom
 
@@ -24,7 +24,7 @@ Along the way, they'll meet brave women like Hagar, Shiphrah and Puah, Miriam, a
 
 The story is written and the illustrations are coming next! 🎨
 
-Haven't read Book 1 yet? Joesiah & Malani: Noah's Bloodline is available now on Amazon. Link in bio! 📚
+Haven't read Part 1 yet? Joesiah & Malani: Noah's Bloodline is available now on Amazon. Link in bio! 📚
 
 Know the Word. Seek the Truth. Remember who you are. Walk in the purpose God gave you.
 
@@ -34,5 +34,5 @@ Know the Word. Seek the Truth. Remember who you are. Walk in the purpose God gav
 ## Hashtags
 
 ```
-#NotBuilt2Brk #JoesiahAndMalani #Book2 #ComingSoon #FromAbrahamToMoses #ChristianChildrensBooks #BlackChildrensBooks #KidsBibleStory #FaithBasedBooks #BlackHistoryForKids #BookTok #KidLit #HomeschoolMom #SelfPublishedAuthor
+#NotBuilt2Brk #JoesiahAndMalani #Part2 #ComingSoon #FromAbrahamToMoses #ChristianChildrensBooks #BlackChildrensBooks #KidsBibleStory #FaithBasedBooks #BlackHistoryForKids #BookTok #KidLit #HomeschoolMom #SelfPublishedAuthor
 ```

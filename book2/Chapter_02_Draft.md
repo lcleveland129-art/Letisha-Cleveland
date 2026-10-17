@@ -1,4 +1,4 @@
-# Book 2 · Chapter 2 — DRAFT for author editing
+# Part 2 · Chapter 2 — DRAFT for author editing
 
 **CHAPTER 2**
 ## Abram Answers the Call
@@ -40,8 +40,8 @@ She pointed again to the words *all peoples on earth.* "And remember this part. 
 ---
 
 ### Notes for you (not part of the book)
-- **Length:** about 360 words. That fits one page in the Book 1 layout.
+- **Length:** about 360 words. That fits one page in the Part 1 layout.
 - **Scripture:** the quotation is Genesis 12:1–3 (NIV), shortened with "…". "To your offspring I will give this land" is Genesis 12:7 (NIV). His age, Lot, Shechem, Bethel and the altars all follow Genesis 12:4–8.
-- **Book 1 tie-in:** Joesiah remembers Canaan from Book 1's Chapters 4–5.
-- **Looking ahead:** "all peoples on earth will be blessed" quietly sets up the Book 3 teaser about Yeshua. Grandma doesn't explain it yet.
+- **Part 1 tie-in:** Joesiah remembers Canaan from Part 1's Chapters 4–5.
+- **Looking ahead:** "all peoples on earth will be blessed" quietly sets up the Part 3 teaser about Yeshua. Grandma doesn't explain it yet.
 - **Illustration idea:** Abram and Sarai's caravan leaving Haran at sunrise, with the children walking alongside. Or Abram building the altar at Shechem.

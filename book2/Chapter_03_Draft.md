@@ -1,4 +1,4 @@
-# Book 2 · Chapter 3 — DRAFT
+# Part 2 · Chapter 3 — DRAFT
 
 **CHAPTER 3**
 ## A Sky Full of Stars

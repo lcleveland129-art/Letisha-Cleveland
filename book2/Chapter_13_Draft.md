@@ -1,4 +1,4 @@
-# Book 2 · Chapter 13 — DRAFT
+# Part 2 · Chapter 13 — DRAFT
 
 **CHAPTER 13**
 ## A Path Through the Sea
@@ -50,5 +50,5 @@ The Bible calls this sea the *Yam Suph*, which can mean "Sea of Reeds." Scholars
 - **Scripture:** Exodus 14:13–14 and 15:21 are quoted from the NIV (14:13–14 is shortened). "Many other people went up with them" is Exodus 12:38 (NIV; the KJV says "a mixed multitude"). The pillars are from 13:21, the wind, dry ground and walls from 14:21–22, and Miriam from 15:20.
 - **Pharaoh's army:** described simply as "the waters flowed back", with no description of soldiers drowning.
 - **"Red Sea" vs. "Sea of Reeds":** Grandma gives it one sentence. Some scholars favour the Gulf of Suez, some the lakes of the eastern Nile Delta, and some the Gulf of Aqaba.
-- **Cover scene:** this chapter's illustration matches your chosen Book 2 cover. You could use the same artwork for both, or a different moment.
+- **Cover scene:** this chapter's illustration matches your chosen Part 2 cover. You could use the same artwork for both, or a different moment.
 - **Illustration idea:** Miriam dancing with her tambourine on the far shore, towering walls of water behind the crowd, the pillar of fire glowing, and Malani twirling beside her.

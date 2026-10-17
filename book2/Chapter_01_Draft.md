@@ -1,4 +1,4 @@
-# Book 2 · Chapter 1 — DRAFT for author editing
+# Part 2 · Chapter 1 — DRAFT for author editing
 
 **CHAPTER 1**
 ## Back to the Promise
@@ -44,7 +44,7 @@ Malani pointed at the long road on the map between Ur and Haran. "Far!"
 ---
 
 ### Notes for you (not part of the book)
-- **Length:** about 330 words. That fits one page in Book 1's layout with room to spare, so you can add to it.
-- **Scripture:** Genesis 11:30 is quoted from the NIV, like the story text in Book 1. Everything else follows Genesis 11:26–31. The Bible doesn't say why Terah stopped in Haran, so the draft doesn't guess.
-- **New line:** "God keeps His promises, even when it takes generations." I've proposed it as Book 2's repeating line, alongside the motto.
+- **Length:** about 330 words. That fits one page in Part 1's layout with room to spare, so you can add to it.
+- **Scripture:** Genesis 11:30 is quoted from the NIV, like the story text in Part 1. Everything else follows Genesis 11:26–31. The Bible doesn't say why Terah stopped in Haran, so the draft doesn't guess.
+- **New line:** "God keeps His promises, even when it takes generations." I've proposed it as Part 2's repeating line, alongside the motto.
 - **Illustration idea:** Grandma, Joesiah and Malani at the family-tree scroll. A glowing path runs from Shem to Abram, with a small map showing Ur and Haran.

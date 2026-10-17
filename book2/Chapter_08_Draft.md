@@ -1,4 +1,4 @@
-# Book 2 · Chapter 8 — DRAFT
+# Part 2 · Chapter 8 — DRAFT
 
 **CHAPTER 8**
 ## Twelve Sons, Twelve Tribes
@@ -60,6 +60,6 @@ Grandma closed the scroll gently. "From the very beginning, God's family include
   - Genesis 48:5 is quoted from the NIV.
   - The crossed hands are from Genesis 48:13–20.
 - **"The older will serve the younger":** Joesiah applies Rebekah's prophecy (Chapter 6) to Ephraim and Manasseh as an echo of the same pattern. Strictly, Genesis 25:23 is about Jacob and Esau. "God's plan kept showing up in surprising ways" frames it as a pattern, not the same prophecy.
-- **"Including Africa":** Egypt is in Africa, which ties this chapter to Book 1's message.
-- **Book 1 recap:** kept to one paragraph so it doesn't repeat Book 1.
+- **"Including Africa":** Egypt is in Africa, which ties this chapter to Part 1's message.
+- **Part 1 recap:** kept to one paragraph so it doesn't repeat Part 1.
 - **Illustration idea:** old Jacob with arms crossed, blessing young Ephraim and Manasseh, with Joseph and Asenath beside them in Egyptian dress. The family-tree scroll is in the corner.

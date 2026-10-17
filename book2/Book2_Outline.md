@@ -1,19 +1,19 @@
-# Book 2 Outline: *Joesiah & Malani: From Abraham to Moses — The Journey to Freedom*
+# Part 2 Outline: *Joesiah & Malani Time Travel Adventure: Part 2: From Abraham to Moses — The Journey to Freedom*
 
-**Series:** Joesiah & Malani, Book 2 · **Author:** LeTisha C. Cleveland · **Ages:** 8–12
-**Format:** same as Book 1. Each chapter is one page of text facing one full-page illustration (14 chapters, about 32 pages). Most chapters end with a **READ IT FOR YOURSELF** line.
+**Series:** Joesiah & Malani Time Travel Adventure (3 parts), Part 2 · **Author:** LeTisha C. Cleveland · **Ages:** 8–12
+**Format:** same as Part 1. Each chapter is one page of text facing one full-page illustration (14 chapters, about 32 pages). Most chapters end with a **READ IT FOR YOURSELF** line.
 
 This is a **draft outline for your approval**. Change, cut or reorder anything.
 
 ---
 
-## How Book 2 connects to Book 1
+## How Part 2 connects to Part 1
 
-- Book 1 ended with Joseph's family in Egypt, a new Pharaoh, and "a baby would be born… His name was Moses." Its last page promised Book 2 with five stops: **Abraham (a covenant begins) → Isaac (the promise continues) → Jacob (a family grows) → Egypt and Israel (a nation is formed) → Moses (a people are freed).** This outline follows those five stops in order.
+- Part 1 ended with Joseph's family in Egypt, a new Pharaoh, and "a baby would be born… His name was Moses." Its last page promised Part 2 with five stops: **Abraham (a covenant begins) → Isaac (the promise continues) → Jacob (a family grows) → Egypt and Israel (a nation is formed) → Moses (a people are freed).** This outline follows those five stops in order.
 - **Opening:** Grandma explains that to understand the freedom story, they first go *back* to the promise God made to Abraham.
-- **Joseph:** Book 1 already told Joseph's story, so Book 2 recaps it in one short scene (Chapter 8) instead of retelling it.
+- **Joseph:** Part 1 already told Joseph's story, so Part 2 recaps it in one short scene (Chapter 8) instead of retelling it.
 
-## Recurring features (carried over from Book 1)
+## Recurring features (carried over from Part 1)
 
 - Grandma, Joesiah and Malani travel through the story together. Joesiah asks the questions; Malani adds short, joyful lines.
 - **Scripture vs. history.** Grandma keeps separating what the Bible says from what historians and archaeologists debate.
@@ -48,7 +48,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Lesson:** God sees people others overlook.
 - **Read it for yourself:** Genesis 16 and Genesis 21:8–21
 - **Illustration idea:** Hagar by a spring in the desert, with an angel's light.
-- **Why it matters for the series:** it continues Book 1's theme that Africa and Egypt are part of the Bible's story from the beginning.
+- **Why it matters for the series:** it continues Part 1's theme that Africa and Egypt are part of the Bible's story from the beginning.
 
 ## Part Two: The Promise Continues (Isaac)
 
@@ -75,7 +75,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 
 ### Chapter 8: Twelve Sons, Twelve Tribes
 - **Story:** Jacob's twelve sons become the **twelve tribes of Israel**.
-- **Book 1 recap, in one short scene:** Malani shouts "Joseph!" and Grandma recaps how Joseph rose in Egypt and saved his family.
+- **Part 1 recap, in one short scene:** Malani shouts "Joseph!" and Grandma recaps how Joseph rose in Egypt and saved his family.
 - **New detail:** Joseph married **Asenath**, an Egyptian woman. Their sons **Ephraim and Manasseh** were blessed by Jacob and became tribes of Israel too.
 - **Lesson:** God's family has always included many peoples.
 - **Read it for yourself:** Genesis 35:22–26, Genesis 41:50–52 and Genesis 48
@@ -87,7 +87,7 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Story:** Israel grows into a nation. A fearful new Pharaoh forces them into slavery. The midwives **Shiphrah and Puah** fear God and refuse to obey his cruel order.
 - **Lesson:** Courage can come from people the powerful ignore.
 - **Read it for yourself:** Exodus 1
-- **Important framing:** Grandma says the oppression came from a ruler's fear and cruelty, not from the Egyptian people as a whole. This protects Book 1's message about Egypt's great civilization.
+- **Important framing:** Grandma says the oppression came from a ruler's fear and cruelty, not from the Egyptian people as a whole. This protects Part 1's message about Egypt's great civilization.
 - **Illustration idea:** The midwives standing firm.
 
 ### Chapter 10: A Baby in a Basket
@@ -116,18 +116,18 @@ This is a **draft outline for your approval**. Change, cut or reorder anything.
 - **Lesson:** Freedom is something to celebrate and to remember.
 - **Read it for yourself:** Exodus 12:37–38, Exodus 14 and Exodus 15:19–21
 - **History note:** the location of the crossing and the date of the Exodus are debated by scholars. Grandma explains this in one sentence.
-- **Illustration idea:** Miriam dancing with a tambourine, with walls of water behind her. *Malani's favorite page. This is the Book 2 cover scene.*
+- **Illustration idea:** Miriam dancing with a tambourine, with walls of water behind her. *Malani's favorite page. This is the Part 2 cover scene.*
 
 ### Chapter 14: Freedom With a Purpose
-- **Story:** At Mount Sinai, God gives the **Ten Commandments**: freedom with a way to live. Numbers 12:1 tells us Moses had a **Cushite wife**; Cush is the land the children learned about in Book 1. Grandma ties together all five stops of the journey and the promise kept across generations.
+- **Story:** At Mount Sinai, God gives the **Ten Commandments**: freedom with a way to live. Numbers 12:1 tells us Moses had a **Cushite wife**; Cush is the land the children learned about in Part 1. Grandma ties together all five stops of the journey and the promise kept across generations.
 - **Lesson:** Freed people are called to live free, love God and love others.
 - **Read it for yourself:** Exodus 19–20 and Numbers 12:1
-- **Ending:** "Our History Continues…", a **Book 3 teaser**: *From Moses to Yeshua: The Promise Fulfilled*.
+- **Ending:** "Our History Continues…", a **Part 3 teaser**: *From Moses to Yeshua: The Promise Fulfilled*.
 
 ---
 
 ## Decisions (from the author)
-1. **Book 3 teaser:** yes, Book 2's last page previews Book 3, *From Moses to Yeshua: The Promise Fulfilled*. Spelling: **Yeshua**.
+1. **Part 3 teaser:** yes, Part 2's last page previews Part 3, *From Moses to Yeshua: The Promise Fulfilled*. Spelling: **Yeshua**.
 2. **Cover scene:** the **Red Sea crossing** (Chapter 13).
-3. **Characters:** Grandma, Joesiah and Malani keep their Book 1 look. Use Book 1's illustrations as the reference.
-4. **Writing:** Claude drafts each chapter in the Book 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` and `Chapter_02_Draft.md` (approved), `Chapter_03_Draft.md` to `Chapter_14_Draft.md` (all 14 drafted). Full manuscript: `Book2_Full_Draft.md`.
+3. **Characters:** Grandma, Joesiah and Malani keep their Part 1 look. Use Part 1's illustrations as the reference.
+4. **Writing:** Claude drafts each chapter in the Part 1 voice; the author edits. Drafts: `Chapter_01_Draft.md` and `Chapter_02_Draft.md` (approved), `Chapter_03_Draft.md` to `Chapter_14_Draft.md` (all 14 drafted). Full manuscript: `Book2_Full_Draft.md`.

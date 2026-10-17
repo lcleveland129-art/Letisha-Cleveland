@@ -11,7 +11,7 @@ My new illustrated book takes kids 8–12 on a journey with Grandma, Joesiah & M
 
 Know the Word. Seek the Truth. Remember who you are. Walk in the purpose God gave you. 💛
 
-📚 Joesiah & Malani: Noah's Bloodline (Book 1) is COMING SOON to Amazon! Release day is in 3 days ⏳ Follow me so you don't miss it, and drop a 💛 if your family wants a copy!
+📚 Joesiah & Malani: Noah's Bloodline (Part 1) is COMING SOON to Amazon! Release day is in 3 days ⏳ Follow me so you don't miss it, and drop a 💛 if your family wants a copy!
 
 #ComingSoon #BookTok #ChristianBooks #BlackChildrensBooks #KidsBibleStory #FaithBasedBooks #BlackHistoryForKids #AfricanHistory #HomeschoolMom #KidLit #NewBook #SelfPublishedAuthor #JoesiahAndMalani
 ```

@@ -1,4 +1,4 @@
-# Book 2 · Chapter 5 — DRAFT
+# Part 2 · Chapter 5 — DRAFT
 
 **CHAPTER 5**
 ## Isaac, the Son of Laughter

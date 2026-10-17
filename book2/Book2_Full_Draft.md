@@ -1,6 +1,6 @@
-# Joesiah & Malani
-## From Abraham to Moses: The Journey to Freedom
-### Book 2 · Full First Draft
+# Joesiah & Malani Time Travel Adventure
+## Part 2: From Abraham to Moses — The Journey to Freedom
+### Full First Draft
 *by LeTisha C. Cleveland*
 
 
@@ -664,7 +664,7 @@ Grandma's eyes sparkled. "That, my love, is where we're going next."
 ---
 
 **THE JOURNEY CONTINUES**
-**Joesiah & Malani · Book 3**
+**Joesiah & Malani Time Travel Adventure · Part 3**
 ***From Moses to Yeshua: The Promise Fulfilled***
 *The promise God made to Abraham keeps going, all the way to **Yeshua**.*
 

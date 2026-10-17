@@ -1,4 +1,4 @@
-# Book 2 · Chapter 4 — DRAFT
+# Part 2 · Chapter 4 — DRAFT
 
 **CHAPTER 4**
 ## Hagar — The God Who Sees
@@ -44,7 +44,7 @@ Whoever you are, wherever you are, God sees you.
 ### Notes for you (not part of the book)
 - **Length:** about 380 words. If the page runs long once it's laid out, the map box is the easiest thing to trim.
 - **Scripture:** Genesis 16:13 is quoted from the NIV. Everything else follows Genesis 16:1–15 and 21:8–21. Ishmael means "God hears" (Genesis 16:11).
-- **Hagar's status:** the NIV calls her Sarai's "slave". I wrote "an enslaved woman", which is honest, age-appropriate, and connects with Book 1's careful handling of slavery.
+- **Hagar's status:** the NIV calls her Sarai's "slave". I wrote "an enslaved woman", which is honest, age-appropriate, and connects with Part 1's careful handling of slavery.
 - **Timeline:** Genesis 21 happens after Isaac is born, so this chapter says "years later" and doesn't mention Isaac. That leaves his birth for Chapter 5.
 - **"One of the very first people to give God a name":** Hagar is usually described as the first person in the Bible to give God a name. I softened it to "one of the very first" to be safe; you can use "the first" if you prefer.
 - **Illustration idea:** Hagar kneeling by the desert spring, with a soft light and the angel. Grandma, Joesiah and Malani watch from a respectful distance.

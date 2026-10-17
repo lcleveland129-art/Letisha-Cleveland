@@ -123,7 +123,7 @@ def slide_motto():
     shadow_text(img, (W / 2, 260), lines, font('Literata-BoldItalic', 64), WHITE, spacing=26)
     rule(d, W / 2, 830, 320)
     shadow_text(img, (W / 2, 880), 'Joesiah & Malani', font('Cinzel-Black', 64), GOLD_LT)
-    shadow_text(img, (W / 2, 965), 'NOAH’S BLOODLINE · BOOK 1', font('Cinzel-Bold', 40), CREAM)
+    shadow_text(img, (W / 2, 965), 'NOAH’S BLOODLINE · PART 1', font('Cinzel-Bold', 40), CREAM)
     shadow_text(img, (W / 2, 1060), 'A faith-filled illustrated chapter book for ages 8–12\nby LeTisha C. Cleveland',
                 font('Literata-Italic', 34), CREAM, spacing=14)
     shadow_text(img, (W / 2, 1220), 'Available on Amazon • Link in bio', font('Cinzel-Bold', 38), GOLD_LT)
@@ -187,7 +187,7 @@ def scene_base(src, caption, last=False):
     if last:
         dd = ImageDraw.Draw(top)
         for k, (txt, fn, sz, col) in enumerate([
-                ('BOOK 1 • AGES 8–12', 'Cinzel-Bold', 44, CREAM),
+                ('PART 1 • AGES 8–12', 'Cinzel-Bold', 44, CREAM),
                 ('by LeTisha C. Cleveland', 'Literata-Italic', 40, CREAM),
                 ('Available on Amazon', 'Cinzel-Bold', 48, GOLD_LT)]):
             y = 1440 + k * 72

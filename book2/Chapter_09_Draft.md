@@ -1,4 +1,4 @@
-# Book 2 · Chapter 9 — DRAFT
+# Part 2 · Chapter 9 — DRAFT
 
 **CHAPTER 9**
 ## A New King Who Did Not Know Joseph

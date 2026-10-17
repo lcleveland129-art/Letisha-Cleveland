@@ -1,4 +1,4 @@
-# Book 2 · Chapter 10 — DRAFT
+# Part 2 · Chapter 10 — DRAFT
 
 **CHAPTER 10**
 ## A Baby in a Basket
@@ -52,7 +52,7 @@ Joesiah's eyes lit up. "MOSES! The baby from the end of the first book!"
   - Miriam's offer follows Exodus 2:7 (NIV), lightly shortened.
   - "I drew him out of the water" is Exodus 2:10 (NIV).
   - Miriam and Jochebed are named in Exodus 15:20 and Numbers 26:59; Exodus 2 doesn't name them, which is why the draft says "later in the Bible, we learn…".
-  - "Educated in all the wisdom of the Egyptians" is from Acts 7:22, connecting back to Book 1's Egyptian learning.
+  - "Educated in all the wisdom of the Egyptians" is from Acts 7:22, connecting back to Part 1's Egyptian learning.
 - **Pharaoh's order:** mentioned in one sentence (Exodus 1:22), and Grandma comforts Malani right away.
-- **Book 1 tie-in:** Book 1 ended with "His name was Moses." This chapter lets Joesiah make that connection out loud.
+- **Part 1 tie-in:** Part 1 ended with "His name was Moses." This chapter lets Joesiah make that connection out loud.
 - **Illustration idea:** the princess lifting the basket from the reeds, with Miriam peeking out nearby, the Nile, papyrus and soft morning light. (This was the other cover option; it still makes a strong full-page illustration.)

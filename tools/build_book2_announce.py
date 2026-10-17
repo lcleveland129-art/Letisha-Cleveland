@@ -61,7 +61,7 @@ def make(W, H, name, art_h, sizes):
     d = ImageDraw.Draw(img)
     cx = W / 2
     y = sizes['top']
-    bb = stext(img, (cx, y), 'BOOK 2', font('Cinzel-Bold', sizes['eyebrow']), GOLD)
+    bb = stext(img, (cx, y), 'PART 2', font('Cinzel-Bold', sizes['eyebrow']), GOLD)
     bb = stext(img, (cx, bb[3] + 8), 'IS ON THE WAY!', font('Cinzel-Black', sizes['head']), GOLD_LT)
     rule(d, cx, bb[3] + 26)
     a = fit(art, h=art_h)
@@ -73,17 +73,17 @@ def make(W, H, name, art_h, sizes):
     # Book 1 strip
     y = bb[3] + sizes['gap']
     th = fit(c1, h=sizes['thumb'])
-    lines = 'Start the journey with Book 1:\nNOAH’S BLOODLINE\nAvailable now on Amazon'
+    lines = 'Start the journey with Part 1:\nNOAH’S BLOODLINE\nAvailable now on Amazon'
     f1 = font('Literata-Italic', sizes['strip'])
     f2 = font('Cinzel-Bold', sizes['strip'] + 4)
-    tw = max(d.textlength('Start the journey with Book 1:', font=f1), d.textlength('NOAH’S BLOODLINE', font=f2),
+    tw = max(d.textlength('Start the journey with Part 1:', font=f1), d.textlength('NOAH’S BLOODLINE', font=f2),
              d.textlength('Available now on Amazon', font=f1))
     total = th.width + 30 + tw
     x0 = int(cx - total / 2)
     framed(img, th, x0, y, b=3)
     tx = x0 + th.width + 30
     ty = y + (th.height - (sizes['strip'] * 3 + 34)) / 2
-    stext(img, (tx, ty), 'Start the journey with Book 1:', f1, CREAM, anchor='la')
+    stext(img, (tx, ty), 'Start the journey with Part 1:', f1, CREAM, anchor='la')
     stext(img, (tx, ty + sizes['strip'] + 14), 'NOAH’S BLOODLINE', f2, GOLD_LT, anchor='la')
     stext(img, (tx, ty + 2 * sizes['strip'] + 30), 'Available now on Amazon', f1, CREAM, anchor='la')
     img.save(f'{OUT}/{name}', quality=92)
